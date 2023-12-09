@@ -49,6 +49,7 @@
 </div>
 </div>
 
+<!-- searching -->
 <form>
     <div class=" drop-shadow-lg bg-white py-2  mx-4 lg:mx-64 mt-10 rounded-2xl  lg:max-h-100 items-center justify-between p-4 " aria-label="Global">   
     <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
@@ -64,6 +65,28 @@
     </div>
 </form>
 
+<hr class="my-20 border-t-4" />
 
+<!-- about -->
+<section id="about" class="pt-30 pb-32">
+        <div class="container px-8">
+            <div class="flex flex-wrap">
+                <div class ="w-full px-4 mb-10 justify-items-between">
+                    <h2 class="font-bold uppercase text-black text-lg mb-3 ">Tentang Kami</h2>
+                    <h4 class="text-black text-35 mb-7">Melalui Up Gadget, Kami yakin bahwa membeli dan menjual gadget seharusnya aman, mudah dan dengan standar yang jelas</h4>
+                    <p></p>
+                </div>
+                <div class="col-lg-6 video-box align-self-baseline">
+                    <img src="/src/img/hp.jpeg" class="img-fluid" alt>
+                </div>
+                <div class="w-full px-4">
+                    <h3 class="font-bold text-primary text-25 mb-3">Cerita Kami</h3>
+                    <h5 class="font-bold text-10 mb-3">Dimulai pada tahun 2015 dan telah berkembang menjadi mitra yang terpercaya dalam pasar elektronik bekas di Asia Tenggara.</h5>
+                    <p clas=" font-medium text-10 mb-3">Perjalanan kami telah didorong oleh komitmen kami yang teguh terhadap kepuasan pelanggan. Ambisi kami pun menjadi lebih tinggi ketika kami menjadi bagian dari Carousell Group pada tahun 2022. Memperkuat tujuan awal kami demi memperkenalkan gaya hidup yang lebih ramah lingkungan.</p>
+
+                </div>
+            </div>
+        </div>
+</section>
 
 @endsection
