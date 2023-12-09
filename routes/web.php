@@ -23,3 +23,6 @@ Route::get('/login', [LoginController::class, 'index'])->name('login');
 
 Route::get('/register', [RegisterController::class, 'index'])->name('register');
 
+Route::get('/dashboard', function() {
+    return view('dashboard.index');
+});
