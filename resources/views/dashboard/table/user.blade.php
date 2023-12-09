@@ -1,5 +1,10 @@
+<script src="https://cdn.tailwindcss.com"></script>
+@include('dashboard.partials.sidebar')
 
 
+{{-- Main Content --}}
+<div class="p-4 sm:ml-64">
+    <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700 mt-14">
 {{-- User Table --}}
 <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
     <div class="flex items-center justify-between flex-column md:flex-row flex-wrap space-y-4 md:space-y-0 py-4 bg-black dark:bg-gray-900">
@@ -128,3 +133,6 @@
     </div>
 </div>
 {{-- End User Table --}}
+</div>
+</div>
+  {{-- End Content Main --}}

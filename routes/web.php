@@ -23,6 +23,17 @@ Route::get('/login', [LoginController::class, 'index'])->name('login');
 
 Route::get('/register', [RegisterController::class, 'index'])->name('register');
 
+// Dashboard Admin
 Route::get('/dashboard', function() {
     return view('dashboard.index');
 });
+
+Route::get('/user', function() {
+    return view('dashboard.table.user');
+});
+
+Route::get('/product', function() {
+    return view('dashboard.table.product');
+});
+
+// End Dashboard Admin
