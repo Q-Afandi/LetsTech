@@ -1,8 +1,9 @@
 @extends('layouts.main')
 
 @section('container')
-
+<main>
 <!-- JumboTron-->
+<section class="jumbotron jumbotron-fluid">
 <div class="drop-shadow-lg bg-white mx-4 lg:mx-20 mt-10 rounded-2xl flex flex-1 max-w-full lg:max-h-100 items-center justify-between p-0" aria-label="Global">
     <div id="default-carousel" class="relative w-full" data-carousel="slide">
     <!-- Carousel wrapper -->
@@ -48,8 +49,9 @@
     </button>
 </div>
 </div>
-
-<!-- searching -->
+</section>
+    <!-- searching -->
+    <section class="bg-white py-10">
 <form>
     <div class=" drop-shadow-lg bg-white py-2  mx-4 lg:mx-64 mt-10 rounded-2xl  lg:max-h-100 items-center justify-between p-4 " aria-label="Global">   
     <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
@@ -64,7 +66,7 @@
     </div>
     </div>
 </form>
-
+    </section>
 <hr class="my-20 border-t-4" />
 
 <!-- about -->
@@ -89,4 +91,5 @@
         </div>
 </section>
 
+</main>
 @endsection
