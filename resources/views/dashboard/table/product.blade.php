@@ -1,19 +1,31 @@
 
 <script src="https://cdn.tailwindcss.com"></script>
-@include('dashboard.partials.sidebar')
 
 
 {{-- Main Content --}}
 <div class="p-4 sm:ml-64">
     <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700 mt-14">
 {{-- Product table --}}
-<div class="relative overflow-x-auto shadow-md sm:rounded-lg">
-    <div class="flex items-center justify-between flex-column md:flex-row flex-wrap space-y-4 md:space-y-0 py-4 bg-black dark:bg-gray-900">
+{{-- Product Table --}}
+<div class="relative overflow-x-auto">
+    <div class="flex items-center justify-between flex-column md:flex-row flex-wrap space-y-4  p-4 bg-black dark:bg-gray-900">
+        {{-- h1 product table --}}
         <div>
-            <h1 class="mb-4 text-xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">PRODUCT</span> Table</h1>
+            <h1 class="text-xl font-extrabold text-gray-900 dark:text-white lg:text-6xl"><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">PRODUCT</span> Table</h1>
         </div>
+        </div>
+    </div>
+    <div class="relative overflow-x-auto">
+        <div class="flex items-center justify-between flex-column  flex-wrap px-6 py-2 bg-black dark:bg-gray-900">
+            {{-- Button Tambah --}}
+        <button class="relative inline-flex p-0.5 mb-2 me-4 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800">
+            <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                Tambah Data
+                </span>
+                </button>
+        {{-- Search --}}
         <label for="table-search" class="sr-only">Search</label>
-        <div class="relative">
+        <div class="relative items-center">
             <div class="absolute inset-y-0 rtl:inset-r-0 start-0 flex items-center ps-3 pointer-events-none">
                 <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
