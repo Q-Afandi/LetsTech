@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\DashboardUserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,12 +29,10 @@ Route::get('/dashboard', function() {
     return view('dashboard.index');
 });
 
-Route::get('/user', function() {
-    return view('dashboard.table.user');
-});
-
 Route::get('/product', function() {
     return view('dashboard.table.product');
 });
+
+Route::resource('/dashboard/table/user', DashboardUserController::class);
 
 // End Dashboard Admin
