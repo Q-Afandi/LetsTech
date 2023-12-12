@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\DashboardUserController;
+use App\Http\Controllers\DashboardProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,10 +30,8 @@ Route::get('/dashboard', function() {
     return view('dashboard.index');
 });
 
-Route::get('/product', function() {
-    return view('dashboard.table.product');
-});
+Route::resource('/dashboard/user/', DashboardUserController::class);
 
-Route::resource('/dashboard/table/user', DashboardUserController::class);
+Route::resource('/dashboard/product/', DashboardProductController::class);
 
 // End Dashboard Admin
