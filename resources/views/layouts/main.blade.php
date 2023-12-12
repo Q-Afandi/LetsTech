@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- styles -->
+    <link href="{{ asset('asset/css/owl.carousel.min')}}" rel="stylesheet">
+
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     <title>UpGadget</title>
@@ -16,7 +19,30 @@
         @yield('container')
     </div>
     
-
+    <!-- Scripts -->
+    <script src="{{ asset('asset/css/owl.carousel.min')}}" ></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:1,
+                    nav:true
+                },
+                600:{
+                    items:3,
+                    nav:false
+                },
+                1000:{
+                    items:5,
+                    nav:true,
+                    loop:false
+                }
+            }
+        })
+    </script>
 
 </body>
 </html>
