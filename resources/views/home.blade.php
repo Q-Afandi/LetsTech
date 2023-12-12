@@ -27,8 +27,7 @@
         <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
         <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
         <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+        
     </div>
     <!-- Slider controls -->
     <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
@@ -71,25 +70,33 @@
 
 <!-- about -->
 <section id="about" class="pt-30 pb-32">
-        <div class="container px-8">
-            <div class="flex flex-wrap">
-                <div class ="w-full px-4 mb-10 justify-items-between">
-                    <h2 class="font-bold uppercase text-black text-lg mb-3 ">Tentang Kami</h2>
-                    <h4 class="text-black text-35 mb-7">Melalui Up Gadget, Kami yakin bahwa membeli dan menjual gadget seharusnya aman, mudah dan dengan standar yang jelas</h4>
-                    <p></p>
+        <div class="container px-10">
+            <div class="flex flex-wrap text-center items-center justify-center ">
+                
+                <div class ="flex flex-col px-25 mb-30 lg:w-3/5 p-5">
+                    <h2 class="text-center font-bold text-black text-3xl mb-4 lg:w-3/4 lg:mb-12 ">Tentang Kami</h2>
+                    <p class="text-center  text-black text-35 mb-4 lg:w-3/4 lg:mb-12">Di UpGadget kamu bisa beli gadget dengan kualitas terjamin.Setiap produk sudah melewati prosedur pengecekan secara detail dan menyeluruh. Dengan standar yang sangat jelas.</p>
+                    
                 </div>
-                <div class="col-lg-6 video-box align-self-baseline">
-                    <img src="/src/img/hp.jpeg" class="img-fluid" alt>
+                
+                <section class="md:mb-4 container px-4 md:px-8 lg:px-16 mx-auto py-5 flex flex-wrap items-center">
+                <div class="w-full lg:w-1/2 flex mb-4">
+                    <img src="/src/img/cewe.png" class="h-35 md:h-50 lg:h-auto w-auto" alt>
                 </div>
-                <div class="w-full px-4">
-                    <h3 class="font-bold text-primary text-25 mb-3">Cerita Kami</h3>
-                    <h5 class="font-bold text-10 mb-3">Dimulai pada tahun 2015 dan telah berkembang menjadi mitra yang terpercaya dalam pasar elektronik bekas di Asia Tenggara.</h5>
-                    <p clas=" font-medium text-10 mb-3">Perjalanan kami telah didorong oleh komitmen kami yang teguh terhadap kepuasan pelanggan. Ambisi kami pun menjadi lebih tinggi ketika kami menjadi bagian dari Carousell Group pada tahun 2022. Memperkuat tujuan awal kami demi memperkenalkan gaya hidup yang lebih ramah lingkungan.</p>
+                <div class="w-full px-4 lg:w-1/2 border rounded-lg shadow-lg text-left">
+                    <h3 class="font-bold text-primary text-20 mb-3">Cerita Kami</h3>
+                    <h5 class="font-bold text-10 mb-3">Dimulai pada tahun 2021 dan telah berkembang menjadi mitra yang terpercaya dalam pasar elektronik di Indonesia.</h5>
+                    <p clas=" font-medium text-10 mb-3">Perjalanan kami telah didorong oleh komitmen kami yang teguh terhadap kepuasan pelanggan. Tujuan kami sebagai sebuah platform adalah untuk membantu Anda menjual dan membeli gadget yang tepat dengan harga yang sesuai dan mendapatkan pengalaman terbaik. Ambisi kami pun menjadi lebih tinggi ketika kami menjadi bagian dari Carousell Group pada tahun 2022.</p>
 
                 </div>
+                </section>
             </div>
         </div>
 </section>
 
+
+
 </main>
 @endsection
+
+
