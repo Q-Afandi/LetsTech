@@ -1,11 +1,8 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.tailwindcss.com" rel="stylesheet">
-</head>
+@extends('layouts.main')
+
+@section('container')
+
+
 <body class="h-screen overflow-hidden flex items-center justify-center" style="background: #edf2f7;">
     <!-- Create By Joker Banny -->
 <div class="min-h-screen bg-gradient-to-tr from-red-300 to-yellow-200 flex justify-center items-center py-20">
@@ -119,4 +116,5 @@
   </div>
 </div>
 </body>
-</html>
+
+@endsection
