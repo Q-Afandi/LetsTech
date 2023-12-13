@@ -35,3 +35,7 @@ Route::resource('/dashboard/user/', DashboardUserController::class);
 Route::resource('/dashboard/product/', DashboardProductController::class);
 
 // End Dashboard Admin
+
+Route::get('/product', function () {
+    return view('product');
+});
