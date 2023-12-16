@@ -1,7 +1,7 @@
 <nav class=" border-gray-200  ">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
     <div class="drop-shadow-lg bg-white mx-4 lg:mx-48 mt-6 rounded-full flex flex-1 max-w-full lg:max-h-20 items-center justify-between p-2" aria-label="Global">
-      <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+      <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
           <img src="/src/img/logo.png" class="h-8" alt="Flowbite Logo" />
           <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Up Gadget</span>
       </a>
