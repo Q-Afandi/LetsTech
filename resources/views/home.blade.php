@@ -4,7 +4,7 @@
 <main>
 <!-- JumboTron-->
 <section class="jumbotron jumbotron-fluid">
-<div class="drop-shadow-lg bg-white mx-4 lg:mx-20 mt-10 rounded-2xl flex flex-1 max-w-full lg:max-h-100 items-center justify-between p-0" aria-label="Global">
+<div class="drop-shadow-2xl bg-white mx-4 lg:mx-52 mt-10 rounded-2xl flex flex-1 max-w-full lg:max-h-100 items-center justify-between p-0" aria-label="Global">
     <div id="default-carousel" class="relative w-full" data-carousel="slide">
     <!-- Carousel wrapper -->
     <div class="drop-shadow-lg relative h-56 overflow-hidden rounded-2xl md:h-80" >
@@ -71,9 +71,9 @@
 <hr class="my-20 border-t-4" />
 
 <!-- about -->
-<section id="about" class="pt-30 pb-32">
+<section id="about" class="pt-30 pb-32 mx-52">
         <div class="container px-10">
-            <div class="flex flex-wrap text-center items-center justify-center ">
+            <div class="flex flex-wrap text-center items-center justify-center   ">
                 
                 <div class ="flex flex-col px-25 mb-30 lg:w-3/5 p-5">
                     <h2 class="text-center font-bold text-black text-3xl mb-4 lg:w-3/4 lg:mb-12 ">Tentang Kami</h2>
