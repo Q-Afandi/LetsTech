@@ -10,7 +10,7 @@
     <div class="flex items-center justify-between flex-column md:flex-row flex-wrap space-y-4  p-4 bg-gray-900">
         {{-- h1 Product table --}}
         <div>
-            <h1 class="text-xl font-extrabold text-white lg:text-6xl"><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">PRODUCT</span> Table</h1>
+            <h1 class="text-xl font-extrabold text-white lg:text-4xl"><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">PRODUCT</span> Table</h1>
         </div>
         </div>
     </div>
@@ -77,28 +77,26 @@
   </div>
   {{-- modal tutup --}}
 
-
+    <div class="static">
         {{-- Search --}}
-        <label for="table-search" class="sr-only">Search</label>
-        <div class="relative items-center">
+        label for="table-search" class="sr-only">Search</label>
+        <div class="relative items-center mb-3">
             <div class="absolute inset-y-0 rtl:inset-r-0 start-0 flex items-center ps-3 pointer-events-none">
-                <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                <svg class="w-4 h-4 text-gray-50 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
                 </svg>
             </div>
-            <input type="text" id="table-search-users" class="block pt-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg w-80 bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search for users">
+            <input type="text" id="table-search-users" class="block pt-2 ps-10 text-sm  text-white border rounded-lg w-80 bg-gray-500 focus:ring-blue-500 " placeholder="Search for users">
         </div>
-    </div>
-    {{-- Table --}}
-    <table class="w-full text-sm  text-gray-500  ">
-        <thead class=" text-gray-50 uppercase bg-gray-900 ">
+        </div>
+            {{-- Table --}}
+        <table class="static text-sm  text-gray-500  ">
+            <thead class=" text-gray-50 uppercase bg-gray-900 ">
             <tr>
                 <th scope="col" class="w-2 px-6 py-3">
                     No
                 </th>
-                <th scope="col" class="w-8 px-14 py-3">
-                    Image
-                </th>
+                
                 <th scope="col" class="w-8 px-14 py-3">
                     Nama Product
                 </th>
@@ -126,9 +124,6 @@
                     <div class="text-base font-semibold item-center">{{ $loop->iteration }}</div>
                 </td>
                 <td class="px-14 py-4 text-center">
-                    <div class="text-base font-semibold">{{ $product->gambar }}</div>
-                </td>
-                <td class="px-14 py-4 text-center">
                     {{ $product->nama_product }}
                 </td>
                 <td class="px-12 py-4 text-center">
@@ -153,7 +148,8 @@
                 
             @endforeach
             
-    </table>
+        </table>
+    </div>
 
     
 {{-- End User Table --}}

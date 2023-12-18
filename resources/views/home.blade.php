@@ -4,30 +4,28 @@
 <main>
 <!-- JumboTron-->
 <section class="jumbotron jumbotron-fluid">
-<div class="drop-shadow-2xl bg-white mx-4 lg:mx-52 mt-10 rounded-2xl flex flex-1 max-w-full lg:max-h-100 items-center justify-between p-0" aria-label="Global">
+<div class="drop-shadow-sm bg-white mx-4 mt-4  rounded-2xl items-center justify-between p-0">
     <div id="default-carousel" class="relative w-full" data-carousel="slide">
     <!-- Carousel wrapper -->
-    <div class="drop-shadow-lg relative h-56 overflow-hidden rounded-2xl md:h-80" >
+    <div class="drop-shadow-lg relative h-56 overflow-hidden rounded-2xl md:h-96" >
          <!-- Item 1 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="/src/img/jt1.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            <img src="/src/img/jt1.jpg" class="absolute block w-4/5 rounded-2xl lg:rounded-2xl -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
         </div>
         <!-- Item 2 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="/src/img/jt2.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            <img src="/src/img/jt2.jpg" class="absolute block w-4/5 rounded-2xl lg:rounded-2xl -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
         </div>
         <!-- Item 3 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="/src/img/jt3.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            <img src="/src/img/jt3.jpg" class="absolute block w-4/5 rounded-2xl lg:rounded-2xl -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
         </div>
-
     </div>
     <!-- Slider indicators -->
     <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
         <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
         <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
         <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-        
     </div>
     <!-- Slider controls -->
     <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
@@ -51,27 +49,55 @@
 </section>
 
 
-    <!-- searching -->
-    <section class="bg-white py-10">
-<form>
-    <div class=" drop-shadow-lg bg-white py-2  mx-4 lg:mx-64 mt-10 rounded-2xl  lg:max-h-100 items-center justify-between p-4 " aria-label="Global">   
-    <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
-    <div class="relative">
-        <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-            <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
-            </svg>
+{{-- Garansi dll --}}
+<section>
+    <div class="container bg-white">
+        <div class="drop-shadow-2xl mx-1 lg:mx-36 mt-14 flex flex-1 max-w-xl lg:max-h-80 p-2 pt-2 items-center justify-between">
+            <ul class="font-medium text-gray-500 flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-5 rtl:space-x-reverse md:mt-0 md:border-0">
+                <li class="flex w-40">
+                    <img src="/src/img/logo.png" class="h-20" alt="">
+                <li>
+                    <span class="text-black">Garansi 6 Bulan</span>
+                    <p class="text-xs">Kerusakan gadget dijamin oleh UpGadget</p>
+                </li>
+                </li>
+                <li class="flex w-40">
+                    <img src="/src/img/logo.png" class="h-20" alt="">
+                </li>
+                <li>
+                    <span class="text-black">Fungsi Normal</span>
+                    <p class="text-xs">Kerusakan gadget dijamin oleh UpGadget</p>
+                </li>
+                <li class="flex w-40">
+                    <img src="/src/img/logo.png" class="h-20" alt="">
+                </li>
+                <li>
+                    <span class="text-black">Coba Dulu</span>
+                    <p class="text-xs">Bisa ditukar jika tidak berfungsi normal</p>
+                </li>
+                <li class="flex w-40">
+                    <img src="/src/img/logo.png" class="h-20" alt="">
+                </li>
+                <li>
+                    <span class="text-black">Produk Original</span>
+                    <p class="text-xs">Semua gadget telah melalui QC</p>
+                </li>
+                <li class="flex w-40">
+                    <img src="/src/img/logo.png" class="h-20" alt="">
+                </li>
+                <li>
+                    <span class="text-black">Customer Service</span>
+                    <p class="text-xs">Chat kamu bakal dijawab < 10 menit </p>
+                </li>
+            </ul>
         </div>
-        <input type="search" id="default-search" class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Cari barang" required>
-        <button type="submit" class="text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
     </div>
-    </div>
-</form>
-    </section>
-<hr class="my-20 border-t-4" />
+</section>
+{{-- End Tes --}}
+
 
 <!-- about -->
-<section id="about" class="pt-30 pb-32 mx-52">
+<section id="about" class="pt-30 pb-32 mx-52 mt-52">
         <div class="container px-10">
             <div class="flex flex-wrap text-center items-center justify-center   ">
                 

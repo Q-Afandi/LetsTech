@@ -1,8 +1,8 @@
 
   {{-- SideBar --}}
-  <aside id="logo-sidebar" class="fixed top-0 left-0 z-40 w-64 h-screen pt-20 transition-transform -translate-x-full bg-white border-r border-gray-200 sm:translate-x-0 dark:bg-gray-800 dark:border-gray-700" aria-label="Sidebar">
-     <div class="h-full px-3 pb-4 overflow-y-auto bg-gray-800 ">
-        <ul class="space-y-2 font-medium ">
+  <aside id="logo-sidebar" class="fixed top-0 left-0 z-40 w-64 h-screen pt-20 transition-transform -translate-x-full bg-white sm:translate-x-0 dark:bg-gray-800 dark:border-gray-700" aria-label="Sidebar">
+     <div class="h-full px-3 pb-4 overflow-y-auto bg-primary">
+        <ul class="space-y-2 font-medium text-2xl ">
            <li class="mt-5 nav-item">
               <a href="/dashboard" class="{{ Request::is('/dashboard') ? 'active' : '' }} flex items-center p-2 rounded-lg text-white  hover:bg-gray-700 group">
                  <svg class="w-5 h-5 transition duration-75 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 21">
@@ -28,15 +28,7 @@
                  <span class="flex-1 ms-3">Products</span>
               </a>
            </li>
-           <li class="pt-5">
-              <a href="#" class="flex items-center p-2 rounded-lg text-white hover:bg-gray-700 group">
-                 <svg class="flex-shrink-0 w-5 h-5  transition duration-75  " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 16">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 8h11m0 0L8 4m4 4-4 4m4-11h3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-3"/>
-                 </svg>
-                 <span class="flex-1 ms-3">Sign In</span>
-              </a>
-           </li>
-        </ul>
+         </ul>
      </div>
   </aside>
   {{-- End Sidebar --}}
