@@ -10,7 +10,7 @@
     <div class="flex items-center justify-between flex-column md:flex-row flex-wrap space-y-4  p-4 bg-gray-900">
         {{-- h1 user table --}}
         <div>
-            <h1 class="text-xl font-extrabold text-white lg:text-6xl"><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">USER</span> Table</h1>
+            <h1 class="text-xl font-extrabold text-white lg:text-4xl"><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">USER</span> Table</h1>
         </div>
         </div>
     </div>

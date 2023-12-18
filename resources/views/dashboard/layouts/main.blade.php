@@ -13,16 +13,16 @@
     <title>UpGadget</title>
 </head>
 <body>
-  <div class="container-fluid overflow-hidden">
+  <div class="container-fluid overflow-auto bg-">
     @include('dashboard.layouts.header')
-    <div class="p-4 sm:ml-64">
+    <div class="sm:ml-60 mx-1 ">
       @include('dashboard.layouts.sidebar')
-         <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 mt-20">   
+         <main class="mx-7 my-24">   
           @yield('container')
             
          </main>
-
-
+    </div>     
+  </div>
 </body>
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://unpkg.com/feather-icons"></script>
