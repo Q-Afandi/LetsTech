@@ -10,15 +10,15 @@
     <div class="drop-shadow-lg relative h-56 overflow-hidden rounded-2xl md:h-96" >
          <!-- Item 1 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="/src/img/jt1.jpg" class="absolute block w-4/5 rounded-2xl lg:rounded-2xl -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            <img src="/src/img/home1.jpg" class="absolute block w-4/5 rounded-2xl lg:rounded-2xl -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
         </div>
         <!-- Item 2 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="/src/img/jt2.jpg" class="absolute block w-4/5 rounded-2xl lg:rounded-2xl -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            <img src="/src/img/hom2.jpg" class="absolute block w-4/5 rounded-2xl lg:rounded-2xl -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
         </div>
         <!-- Item 3 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="/src/img/jt3.jpg" class="absolute block w-4/5 rounded-2xl lg:rounded-2xl -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            <img src="/src/img/home3.jpg" class="absolute block w-4/5 rounded-2xl lg:rounded-2xl -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
         </div>
     </div>
     <!-- Slider indicators -->
@@ -51,39 +51,39 @@
 
 {{-- Garansi dll --}}
 <section>
-    <div class="container bg-white">
-        <div class="drop-shadow-2xl mx-1 lg:mx-36 mt-14 flex flex-1 max-w-xl lg:max-h-80 p-2 pt-2 items-center justify-between">
-            <ul class="font-medium text-gray-500 flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-5 rtl:space-x-reverse md:mt-0 md:border-0">
+    <div class="container bg-white block">
+        <div class="drop-shadow-2xl mx-0 lg:mx-0 mt-7 flex flex-1 max-w-xl lg:max-h-70 p-2 pt-2 items-center justify-between">
+            <ul class="font-medium text-gray-500 flex flex-col p-3 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-5 rtl:space-x-reverse md:mt-0 md:border-0">
                 <li class="flex w-40">
-                    <img src="/src/img/logo.png" class="h-20" alt="">
+                    <img src="/src/img/garansi.png" class="h-20" alt="">
                 <li>
                     <span class="text-black">Garansi 6 Bulan</span>
                     <p class="text-xs">Kerusakan gadget dijamin oleh UpGadget</p>
                 </li>
                 </li>
                 <li class="flex w-40">
-                    <img src="/src/img/logo.png" class="h-20" alt="">
+                    <img src="/src/img/fungsi.png" class="h-20" alt="">
                 </li>
                 <li>
                     <span class="text-black">Fungsi Normal</span>
                     <p class="text-xs">Kerusakan gadget dijamin oleh UpGadget</p>
                 </li>
                 <li class="flex w-40">
-                    <img src="/src/img/logo.png" class="h-20" alt="">
+                    <img src="/src/img/coba (2).png" class="h-20" alt="">
                 </li>
                 <li>
                     <span class="text-black">Coba Dulu</span>
                     <p class="text-xs">Bisa ditukar jika tidak berfungsi normal</p>
                 </li>
                 <li class="flex w-40">
-                    <img src="/src/img/logo.png" class="h-20" alt="">
+                    <img src="/src/img/produk.png" class="h-20" alt="">
                 </li>
                 <li>
                     <span class="text-black">Produk Original</span>
                     <p class="text-xs">Semua gadget telah melalui QC</p>
                 </li>
                 <li class="flex w-40">
-                    <img src="/src/img/logo.png" class="h-20" alt="">
+                    <img src="/src/img/service.png" class="h-20" alt="">
                 </li>
                 <li>
                     <span class="text-black">Customer Service</span>
@@ -99,17 +99,15 @@
 <!-- about -->
 <section id="about" class="pt-30 pb-32 mx-52 mt-52">
         <div class="container px-10">
-            <div class="flex flex-wrap text-center items-center justify-center   ">
-                
-                <div class ="flex flex-col px-25 mb-30 lg:w-3/5 p-5">
+            <div class="flex flex-wrap text-center items-center justify-center">
+                <div class ="flex flex-col px-25 mb-26 lg:w-3/5 p-5">
                     <h2 class="text-center font-bold text-black text-3xl mb-4 lg:w-3/4 lg:mb-12 ">Tentang Kami</h2>
                     <p class="text-center  text-black text-35 mb-4 lg:w-3/4 lg:mb-12">Di UpGadget kamu bisa beli gadget dengan kualitas terjamin.Setiap produk sudah melewati prosedur pengecekan secara detail dan menyeluruh. Dengan standar yang sangat jelas.</p>
                     
                 </div>
-                
                 <section class="md:mb-4 container px-4 md:px-8 lg:px-16 mx-auto py-5 flex flex-wrap items-center">
                 <div class="w-full lg:w-1/2 flex mb-4">
-                    <img src="/src/img/cewe.png" class="h-35 md:h-50 lg:h-auto w-auto" alt>
+                    <img src="/src/img/cewe.png" class="h-30 md:h-40 lg:h-auto w-auto" alt>
                 </div>
                 <div class="w-full px-4 lg:w-1/2 border rounded-lg shadow-lg text-left">
                     <h3 class="font-bold text-primary text-20 mb-3">Cerita Kami</h3>
@@ -121,6 +119,232 @@
             </div>
         </div>
 </section>
+
+<!-- review -->
+<section class="mb-4 md:mb-8 container px-4 md:px-8 lg:px-16 mx-auto py-10">
+    <div class="flex flex-col items-center mb-5 text-center">
+        <h2 class="mb-2 font-bold">Berbagai Cerita Dari #ReviewerGaget</h2>
+    </div>
+    <div class="max-w-5xl mx-auto">
+        <div class="slick-slider slick-initialized" dir="ltr">
+        <div id="divHomeTestimonialSectionNext" class="bg-gray-200 hover:bg-primary absolute w-8 h-8 rounded-full flex items-center justify-center -right-2 top-28 cursor-pointer shadow-lg group transition-colors">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="group-hover:text-white rotate-180">
+                <path d="M15 20.67C14.81 20.67 14.62 20.6 14.47 20.45L7.95003 13.93C6.89003 12.87 6.89003 11.13 7.95003 10.07L14.47 3.55002C14.76 3.26002 15.24 3.26002 15.53 3.55002C15.82 3.84002 15.82 4.32002 15.53 4.61002L9.01003 11.13C8.53003 11.61 8.53003 12.39 9.01003 12.87L15.53 19.39C15.82 19.68 15.82 20.16 15.53 20.45C15.38 20.59 15.19 20.67 15 20.67Z" fill="currentColor"></path>
+            </svg>
+        </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+<!-- testimoni -->
+<section id="testimoni" class="mb-10 md:mb-16 container px-4 md:px-8 lg:px lg:px-16 mx-auto">
+    <div class="flex flex-col font-20 items-center mb-5 text-center">
+        <h2 class="mb-2 font-bold">Review Terpercaya Dari Pengguna</h2>
+        <h3 class="large">Dengarkan pendapat mereka yang sudah membeli di UpGadget</h3>
+    </div>
+    <div class=" flex flex-wrap slick-slider slick-intialized" dir="ltr">
+        <div id="divhomeTestimonialSectionPrev" Class="bg-gray-200 hover:bg-primary absolute w-8 h-8 rounded-full flex items-center justify-center left-2 top-28 cursor-pointer shadow-lg z-10 group transition-colors">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="group-hover:text-white">
+            <path d="M15 20.67C14.81 20.67 14.62 20.6 14.47 20.45L7.95003 13.93C6.89003 12.87 6.89003 11.13 7.95003 10.07L14.47 3.55002C14.76 3.26002 15.24 3.26002 15.53 3.55002C15.82 3.84002 15.82 4.32002 15.53 4.61002L9.01003 11.13C8.53003 11.61 8.53003 12.39 9.01003 12.87L15.53 19.39C15.82 19.68 15.82 20.16 15.53 20.45C15.38 20.59 15.19 20.67 15 20.67Z" fill="currentColor"></path>
+        </svg>
+        </div>
+        <div class="slick-list flex ">
+            <div class="slick-track" style="width: 50px; opacity: 1; transform: translate3d(0px, 0px, 0px);"> 
+                <div data-index="0" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 608px;">
+                    <div>
+                        <div class="max-w-sm px-2 mx-auto">
+                            <div class="p-px rounded-lg  bg-gradient-to-b from-primary to-gray-300">
+                                <div class="bg-white rounded-lg p-5 ">
+                                    <div class="flex mb-2">
+                                        <div class="w-16 overflow-hidden rounded-full mr-5">
+                                            <img src="/src/img/testimoni1.png" loading="lazy" width="100" height="100" decoding="async" data-nimg="1" style="color:transparent" >
+                                        </div>
+                                        <div class="w-full">
+                                            <large class="font-medium">Adit</large>
+                                            <br>
+                                            <p>Pelanggan</p>
+                                        </div>
+                                    </div>
+                                    <p class="mb-3 h-28">Semudah membeli hp baru. Segala service memuaskan, mudah cepat dan tidak mengecewakan</p>
+                                    <p>2 Juni 2023</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+        <div class="slick-list flex ">
+            <div data-index="1" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 608px;">
+                <div>
+                    <div class="max-w-sm px-2 mx-auto">
+                        <div class="p-px rounded-lg  bg-gradient-to-b from-primary to-gray-300">
+                            <div class="bg-white rounded-lg p-5 ">
+                                <div class="flex mb-2">
+                                    <div class="w-16 overflow-hidden rounded-full mr-5">
+                                        <img src="/src/img/testimoni2.png" loading="lazy" width="100" height="100" decoding="async" data-nimg="1" style="color:transparent" srcset="/_next/image?url=https%3A%2F%2Fcdn.maujual.com%2Fpublic%2Fimages%2Ftestimony%2Ftestimony-6.webp&amp;w=128&amp;q=75 1x, /_next/image?url=https%3A%2F%2Fcdn.maujual.com%2Fpublic%2Fimages%2Ftestimony%2Ftestimony-6.webp&amp;w=256&amp;q=75 2x" src="/_next/image?url=https%3A%2F%2Fcdn.maujual.com%2Fpublic%2Fimages%2Ftestimony%2Ftestimony-6.webp&amp;w=256&amp;q=75">
+                                    </div>
+                                    <div class="w-full">
+                                        <large class="font-medium">Yanto</large>
+                                        <br>
+                                        <p>Pelanggan</p>
+                                    </div>
+                                </div>
+                                <p class="mb-3 h-28">Oke banget dan mempermudah mencari handphone secara online</p>
+                                <p>13 Juni 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+        <div class="slick-list flex">
+                    <div data-index="2" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 608px;">
+                        <div>
+                            <div class="max-w-sm px-2 mx-auto">
+                                <div class="p-px rounded-lg  bg-gradient-to-b from-primary to-gray-300"><div class="bg-white rounded-lg p-5 ">
+                                    <div class="flex mb-2">
+                                        <div class="w-16 overflow-hidden rounded-full mr-5">
+                                            <img src="/src/img/testimoni3.png"  loading="lazy" width="100" height="100" decoding="async" data-nimg="1" style="color:transparent" srcset="/_next/image?url=https%3A%2F%2Fcdn.maujual.com%2Fpublic%2Fimages%2Ftestimony%2Ftestimony-7.webp&amp;w=128&amp;q=75 1x, /_next/image?url=https%3A%2F%2Fcdn.maujual.com%2Fpublic%2Fimages%2Ftestimony%2Ftestimony-7.webp&amp;w=256&amp;q=75 2x" src="/_next/image?url=https%3A%2F%2Fcdn.maujual.com%2Fpublic%2Fimages%2Ftestimony%2Ftestimony-7.webp&amp;w=256&amp;q=75">
+                                        </div>
+                                        <div class="w-full">
+                                            <large class="font-medium">Trisna Sari</large>
+                                            <br>
+                                            <p>Pelanggan</p>
+                                        </div>
+                                    </div>
+                                    <p class="mb-3 h-28">Selama pembelian di UpGadget tidak adanya kendala</p>
+                                    <p>19 Maret 2023</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="divHomeTestimonialSectionNext" class="bg-gray-200 hover:bg-primary absolute w-8 h-8 rounded-full flex items-center justify-center -right-2 top-28 cursor-pointer shadow-lg group transition-colors">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="group-hover:text-white rotate-180">
+                <path d="M15 20.67C14.81 20.67 14.62 20.6 14.47 20.45L7.95003 13.93C6.89003 12.87 6.89003 11.13 7.95003 10.07L14.47 3.55002C14.76 3.26002 15.24 3.26002 15.53 3.55002C15.82 3.84002 15.82 4.32002 15.53 4.61002L9.01003 11.13C8.53003 11.61 8.53003 12.39 9.01003 12.87L15.53 19.39C15.82 19.68 15.82 20.16 15.53 20.45C15.38 20.59 15.19 20.67 15 20.67Z" fill="currentColor"></path>
+            </svg>
+        </div>
+    </div>
+</section>
+
+
+<section id="product" class="mb-10 md:mb-16 container px-4 md:px-8 lg:px lg:px-16 mx-auto">
+  <div class="inline-block w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+      <a href="#">
+          <img class="p-8 rounded-t-lg w-60" src="/src/img/hp2.jpg" alt="product image" />
+      </a>
+      <div class="px-5 pb-5">
+          <a href="#">
+              <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">iPhone 13</h5>
+          </a>
+          <div class="flex items-center mt-2.5 mb-5">
+              <div class="flex items-center space-x-1 rtl:space-x-reverse">
+                  <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                      <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                  </svg>
+                  <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                      <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                  </svg>
+                  <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                      <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                  </svg>
+                  <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                      <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                  </svg>
+                  <svg class="w-4 h-4 text-gray-200 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                      <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                  </svg>
+              </div>
+              <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-3">5.0</span>
+          </div>
+          <div class="flex items-center justify-between">
+              <span class="text-3xl font-bold text-gray-900 dark:text-white">$599</span>
+              <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
+          </div>
+      </div>
+  </div>
+
+  <div class="inline-block w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+      <a href="#">
+          <img class="p-8 rounded-t-lg w-60" src="/src/img/hp3.jpg" alt="product image" />
+      </a>
+      <div class="px-5 pb-5">
+          <a href="#">
+              <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">iPhone 13 Pro Max</h5>
+          </a>
+          <div class="flex items-center mt-2.5 mb-5">
+              <div class="flex items-center space-x-1 rtl:space-x-reverse">
+                  <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                      <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                  </svg>
+                  <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                      <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                  </svg>
+                  <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                      <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                  </svg>
+                  <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                      <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                  </svg>
+                  <svg class="w-4 h-4 text-gray-200 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                      <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                  </svg>
+              </div>
+              <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-3">5.0</span>
+          </div>
+          <div class="flex items-center justify-between">
+              <span class="text-3xl font-bold text-gray-900 dark:text-white">$599</span>
+              <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
+          </div>
+      </div>
+  </div>
+
+  <div class="inline-block w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+      <a href="#">
+          <img class="p-8 rounded-t-lg w-60" src="/src/img/hp3.jpg" alt="product image" />
+      </a>
+      <div class="px-5 pb-5">
+          <a href="#">
+              <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">iPhone 13 Pro Max</h5>
+          </a>
+          <div class="flex items-center mt-2.5 mb-5">
+              <div class="flex items-center space-x-1 rtl:space-x-reverse">
+                  <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                      <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                  </svg>
+                  <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                      <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                  </svg>
+                  <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                      <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                  </svg>
+                  <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                      <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                  </svg>
+                  <svg class="w-4 h-4 text-gray-200 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                      <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                  </svg>
+              </div>
+              <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-3">5.0</span>
+          </div>
+          <div class="flex items-center justify-between">
+              <span class="text-3xl font-bold text-gray-900 dark:text-white">$599</span>
+              <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
+          </div>
+      </div>
+</div>
+</section>
+
+
 
 
 
