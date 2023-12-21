@@ -3,8 +3,8 @@
 @section('container')
 <main>
 <!-- JumboTron-->
-<section class="jumbotron jumbotron-fluid">
-<div class="drop-shadow-sm bg-white mx-4 mt-4  rounded-2xl items-center justify-between p-0">
+<section class="jumbotron jumbotron-fluid"> 
+<div class="drop-shadow w-sm bg-white mx-4 mt-4  rounded-2xl items-center justify-between p-0">
     <div id="default-carousel" class="relative w-full" data-carousel="slide">
     <!-- Carousel wrapper -->
     <div class="drop-shadow-lg relative h-56 overflow-hidden rounded-2xl md:h-96" >
@@ -29,7 +29,7 @@
     </div>
     <!-- Slider controls -->
     <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-800/30 group-hover:bg-gray-800/60 group-focus:ring-4  dark:group-focus:ring-gray-800/70 group-focus:outline-none">
             <svg class="w-4 h-4 text-white dark:text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
             </svg>
@@ -37,7 +37,7 @@
         </span>
     </button>
     <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-800/30 group-hover:bg-gray-800/60 group-focus:ring-4  dark:group-focus:ring-gray-800/70 group-focus:outline-none">
             <svg class="w-4 h-4 text-white dark:text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
             </svg>
@@ -50,39 +50,39 @@
 
 
 {{-- Garansi dll --}}
-<section>
-    <div class="container bg-white block">
-        <div class="drop-shadow-2xl mx-0 lg:mx-0 mt-7 flex flex-1 max-w-xl lg:max-h-70 p-2 pt-2 items-center justify-between">
-            <ul class="font-medium text-gray-500 flex flex-col p-3 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-5 rtl:space-x-reverse md:mt-0 md:border-0">
-                <li class="flex w-40">
+<section class="justify-items-center w-full md:w-full mt-7 flex flex-auto  pt-2 items-center justify-between">
+    <div class="container bg-white">
+        <div class="drop-shadow-2xl">
+            <ul class="font-medium text-gray-500 flex flex-col p-3 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-1 rtl:space-x-reverse md:mt-0 md:border-0">
+                <li class="flex w-24">
                     <img src="/src/img/garansi.png" class="h-20" alt="">
                 <li>
                     <span class="text-black">Garansi 6 Bulan</span>
                     <p class="text-xs">Kerusakan gadget dijamin oleh UpGadget</p>
                 </li>
                 </li>
-                <li class="flex w-40">
+                <li class="flex w-20">
                     <img src="/src/img/fungsi.png" class="h-20" alt="">
                 </li>
                 <li>
                     <span class="text-black">Fungsi Normal</span>
                     <p class="text-xs">Kerusakan gadget dijamin oleh UpGadget</p>
                 </li>
-                <li class="flex w-40">
+                <li class="flex w-28">
                     <img src="/src/img/coba (2).png" class="h-20" alt="">
                 </li>
                 <li>
                     <span class="text-black">Coba Dulu</span>
                     <p class="text-xs">Bisa ditukar jika tidak berfungsi normal</p>
                 </li>
-                <li class="flex w-40">
+                <li class="flex w-20">
                     <img src="/src/img/produk.png" class="h-20" alt="">
                 </li>
                 <li>
                     <span class="text-black">Produk Original</span>
                     <p class="text-xs">Semua gadget telah melalui QC</p>
                 </li>
-                <li class="flex w-40">
+                <li class="flex w-24">
                     <img src="/src/img/service.png" class="h-20" alt="">
                 </li>
                 <li>
@@ -121,17 +121,17 @@
 </section>
 
 <!-- review -->
-<section class="mb-4 md:mb-8 container px-4 md:px-8 lg:px-16 mx-auto py-10">
-    <div class="flex flex-col items-center mb-5 text-center">
+<section class="justify-items-center w-fit lg:mx-4 mt-7 flex flex-auto max-w pt-2 items-center justify-between">
+    <div class="flex flex-col justify-items-center mb-5 text-center">
         <h2 class="mb-2 font-bold">Berbagai Cerita Dari #ReviewerGaget</h2>
     </div>
-    <div class="max-w-5xl mx-auto">
-        <div class="slick-slider slick-initialized" dir="ltr">
-        <div id="divHomeTestimonialSectionNext" class="bg-gray-200 hover:bg-primary absolute w-8 h-8 rounded-full flex items-center justify-center -right-2 top-28 cursor-pointer shadow-lg group transition-colors">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="group-hover:text-white rotate-180">
+    <div class="max-w-xl mx-auto">
+        <div class="" dir="ltr">
+        {{-- <div id="divHomeTestimonialSectionNext" class="bg-gray-200 hover:bg-primary absolute w-8 h-8 rounded-full items-center justify-center cursor-pointer shadow-lg group transition-colors">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="group-hover:text-white rotate-180 hidden">
                 <path d="M15 20.67C14.81 20.67 14.62 20.6 14.47 20.45L7.95003 13.93C6.89003 12.87 6.89003 11.13 7.95003 10.07L14.47 3.55002C14.76 3.26002 15.24 3.26002 15.53 3.55002C15.82 3.84002 15.82 4.32002 15.53 4.61002L9.01003 11.13C8.53003 11.61 8.53003 12.39 9.01003 12.87L15.53 19.39C15.82 19.68 15.82 20.16 15.53 20.45C15.38 20.59 15.19 20.67 15 20.67Z" fill="currentColor"></path>
             </svg>
-        </div>
+        </div> --}}
         </div>
     </div>
 </section>
@@ -143,100 +143,10 @@
 
 
 <!-- testimoni -->
-<section id="testimoni" class="mb-10 md:mb-16 container px-4 md:px-8 lg:px lg:px-16 mx-auto">
-    <div class="flex flex-col font-20 items-center mb-5 text-center">
-        <h2 class="mb-2 font-bold">Review Terpercaya Dari Pengguna</h2>
-        <h3 class="large">Dengarkan pendapat mereka yang sudah membeli di UpGadget</h3>
-    </div>
-    <div class=" flex flex-wrap slick-slider slick-intialized" dir="ltr">
-        <div id="divhomeTestimonialSectionPrev" Class="bg-gray-200 hover:bg-primary absolute w-8 h-8 rounded-full flex items-center justify-center left-2 top-28 cursor-pointer shadow-lg z-10 group transition-colors">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="group-hover:text-white">
-            <path d="M15 20.67C14.81 20.67 14.62 20.6 14.47 20.45L7.95003 13.93C6.89003 12.87 6.89003 11.13 7.95003 10.07L14.47 3.55002C14.76 3.26002 15.24 3.26002 15.53 3.55002C15.82 3.84002 15.82 4.32002 15.53 4.61002L9.01003 11.13C8.53003 11.61 8.53003 12.39 9.01003 12.87L15.53 19.39C15.82 19.68 15.82 20.16 15.53 20.45C15.38 20.59 15.19 20.67 15 20.67Z" fill="currentColor"></path>
-        </svg>
-        </div>
-        <div class="slick-list flex ">
-            <div class="slick-track" style="width: 50px; opacity: 1; transform: translate3d(0px, 0px, 0px);"> 
-                <div data-index="0" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 608px;">
-                    <div>
-                        <div class="max-w-sm px-2 mx-auto">
-                            <div class="p-px rounded-lg  bg-gradient-to-b from-primary to-gray-300">
-                                <div class="bg-white rounded-lg p-5 ">
-                                    <div class="flex mb-2">
-                                        <div class="w-16 overflow-hidden rounded-full mr-5">
-                                            <img src="/src/img/testimoni1.png" loading="lazy" width="100" height="100" decoding="async" data-nimg="1" style="color:transparent" >
-                                        </div>
-                                        <div class="w-full">
-                                            <large class="font-medium">Adit</large>
-                                            <br>
-                                            <p>Pelanggan</p>
-                                        </div>
-                                    </div>
-                                    <p class="mb-3 h-28">Semudah membeli hp baru. Segala service memuaskan, mudah cepat dan tidak mengecewakan</p>
-                                    <p>2 Juni 2023</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-        </div>
-        <div class="slick-list flex ">
-            <div data-index="1" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 608px;">
-                <div>
-                    <div class="max-w-sm px-2 mx-auto">
-                        <div class="p-px rounded-lg  bg-gradient-to-b from-primary to-gray-300">
-                            <div class="bg-white rounded-lg p-5 ">
-                                <div class="flex mb-2">
-                                    <div class="w-16 overflow-hidden rounded-full mr-5">
-                                        <img src="/src/img/testimoni2.png" loading="lazy" width="100" height="100" decoding="async" data-nimg="1" style="color:transparent" srcset="/_next/image?url=https%3A%2F%2Fcdn.maujual.com%2Fpublic%2Fimages%2Ftestimony%2Ftestimony-6.webp&amp;w=128&amp;q=75 1x, /_next/image?url=https%3A%2F%2Fcdn.maujual.com%2Fpublic%2Fimages%2Ftestimony%2Ftestimony-6.webp&amp;w=256&amp;q=75 2x" src="/_next/image?url=https%3A%2F%2Fcdn.maujual.com%2Fpublic%2Fimages%2Ftestimony%2Ftestimony-6.webp&amp;w=256&amp;q=75">
-                                    </div>
-                                    <div class="w-full">
-                                        <large class="font-medium">Yanto</large>
-                                        <br>
-                                        <p>Pelanggan</p>
-                                    </div>
-                                </div>
-                                <p class="mb-3 h-28">Oke banget dan mempermudah mencari handphone secara online</p>
-                                <p>13 Juni 2023</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>    
-        </div>
-        <div class="slick-list flex">
-                    <div data-index="2" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 608px;">
-                        <div>
-                            <div class="max-w-sm px-2 mx-auto">
-                                <div class="p-px rounded-lg  bg-gradient-to-b from-primary to-gray-300"><div class="bg-white rounded-lg p-5 ">
-                                    <div class="flex mb-2">
-                                        <div class="w-16 overflow-hidden rounded-full mr-5">
-                                            <img src="/src/img/testimoni3.png"  loading="lazy" width="100" height="100" decoding="async" data-nimg="1" style="color:transparent" srcset="/_next/image?url=https%3A%2F%2Fcdn.maujual.com%2Fpublic%2Fimages%2Ftestimony%2Ftestimony-7.webp&amp;w=128&amp;q=75 1x, /_next/image?url=https%3A%2F%2Fcdn.maujual.com%2Fpublic%2Fimages%2Ftestimony%2Ftestimony-7.webp&amp;w=256&amp;q=75 2x" src="/_next/image?url=https%3A%2F%2Fcdn.maujual.com%2Fpublic%2Fimages%2Ftestimony%2Ftestimony-7.webp&amp;w=256&amp;q=75">
-                                        </div>
-                                        <div class="w-full">
-                                            <large class="font-medium">Trisna Sari</large>
-                                            <br>
-                                            <p>Pelanggan</p>
-                                        </div>
-                                    </div>
-                                    <p class="mb-3 h-28">Selama pembelian di UpGadget tidak adanya kendala</p>
-                                    <p>19 Maret 2023</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="divHomeTestimonialSectionNext" class="bg-gray-200 hover:bg-primary absolute w-8 h-8 rounded-full flex items-center justify-center -right-2 top-28 cursor-pointer shadow-lg group transition-colors">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="group-hover:text-white rotate-180">
-                <path d="M15 20.67C14.81 20.67 14.62 20.6 14.47 20.45L7.95003 13.93C6.89003 12.87 6.89003 11.13 7.95003 10.07L14.47 3.55002C14.76 3.26002 15.24 3.26002 15.53 3.55002C15.82 3.84002 15.82 4.32002 15.53 4.61002L9.01003 11.13C8.53003 11.61 8.53003 12.39 9.01003 12.87L15.53 19.39C15.82 19.68 15.82 20.16 15.53 20.45C15.38 20.59 15.19 20.67 15 20.67Z" fill="currentColor"></path>
-            </svg>
-        </div>
-    </div>
-</section>
 
 
+
+{{-- Product --}}
 <section id="product" class="mb-10 md:mb-16 container px-4 md:px-8 lg:px lg:px-16 mx-auto">
   <div class="inline-block w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
       <a href="#">
