@@ -103,7 +103,6 @@
                 <div class ="flex flex-col px-25 mb-26 lg:w-3/5 p-5">
                     <h2 class="text-center font-bold text-black text-3xl mb-4 lg:w-3/4 lg:mb-12 ">Tentang Kami</h2>
                     <p class="text-center  text-black text-35 mb-4 lg:w-3/4 lg:mb-12">Di UpGadget kamu bisa beli gadget dengan kualitas terjamin.Setiap produk sudah melewati prosedur pengecekan secara detail dan menyeluruh. Dengan standar yang sangat jelas.</p>
-                    
                 </div>
                 <section class="md:mb-4 container px-4 md:px-8 lg:px-16 mx-auto py-5 flex flex-wrap items-center">
                 <div class="w-full lg:w-1/2 flex mb-4">
@@ -148,6 +147,12 @@
 
 {{-- Product --}}
 <section id="product" class="mb-10 md:mb-16 container px-4 md:px-8 lg:px lg:px-16 mx-auto">
+    <div class="heading_container text-center font-bold heading_center">
+        <h2>Our products</h2>
+        <svg class=" w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 3">
+            <path d="M2 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm6.041 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM14 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Z"/>
+        </svg>
+    </div>
   <div class="inline-block w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
       <a href="#">
           <img class="p-8 rounded-t-lg w-60" src="/src/img/hp2.jpg" alt="product image" />
@@ -253,12 +258,5 @@
       </div>
 </div>
 </section>
-
-
-
-
-
-</main>
-@endsection
 
 
