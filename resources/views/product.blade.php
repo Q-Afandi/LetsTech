@@ -2,41 +2,132 @@
 
 @section('container')
 
-<section id="testimoni" class="mb-10 md:mb-16 container px-4 md:px-8 lg:px lg:px-16 mx-auto">
-  <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-      <a href="#">
-          <img class="p-8 rounded-t-lg" src="/src/img/hp1.jpg" alt="product image" />
-      </a>
-      <div class="px-5 pb-5">
-          <a href="#">
-              <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Apple Watch Series 7 GPS, Aluminium Case, Starlight Sport</h5>
-          </a>
-          <div class="flex items-center mt-2.5 mb-5">
-              <div class="flex items-center space-x-1 rtl:space-x-reverse">
-                  <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                      <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-                  </svg>
-                  <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                      <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-                  </svg>
-                  <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                      <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-                  </svg>
-                  <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                      <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-                  </svg>
-                  <svg class="w-4 h-4 text-gray-200 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                      <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-                  </svg>
-              </div>
-              <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-3">5.0</span>
-          </div>
-          <div class="flex items-center justify-between">
-              <span class="text-3xl font-bold text-gray-900 dark:text-white">$599</span>
-              <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
-          </div>
-      </div>
-  </div>
+<section id="product">
+<div class="container">
+        <h1 class="text-center mt-5">Temukan ponsel yang tepat untuk Anda</h1>
+
+        <div class="row justify-content-center mt-5">
+            <div class="col-lg-4 mb-5">
+                <div class="card p-3 border-0" style="box-shadow: 0 30px 40px 0 rgba(212, 217, 232, .3);">
+                    <span
+                        style="border-radius: 0 0.375rem 0 0.375rem;position: absolute;top:0;right:0;background-color: #f55a3e;color: #fff;"
+                        class="px-2 py-1">12%</span>
+                    <img src="https://cdn.jagofon.com/model/wzSSlEpbEtwNEFgNZD1MMQLXV1DVWqYDJYrHYTDT.jpg"
+                        class="rounded img-fluid" alt="">
+                    <h5 style="color: #242933;" class="mt-3">iPhone 13 Mini - 256 GB - Pink</h5>
+                    <p> <span class="fw-bold">Kondisi:</span> Mint</p>
+                    <div class="card-group">
+                        <i style="color: #FBD048;font-size: 1rem;" class='bx bxs-star'></i>
+                        <i style="color: #FBD048;font-size: 1rem;" class='bx bxs-star'></i>
+                        <i style="color: #FBD048;font-size: 1rem;" class='bx bxs-star'></i>
+                        <i style="color: #FBD048;font-size: 1rem;" class='bx bxs-star'></i>
+                        <i style="color: #FBD048;font-size: 1rem;" class='bx bx-star'></i>
+                    </div>
+                    <p class="fw-bold text-primary">Rp 13.700.000 <s style="color: #999;font-size: .75rem"
+                            class="product-item__price-new" data-v-26524ea4="">
+                            Rp&nbsp;15.499.000
+                        </s></p>
+                    <div class="d-flex flex-row gap-2">
+                        <div style="background-color: #f5f5f5;" class="badge d-inline-block text-dark">Resmi Indonesia
+                        </div>
+                        <div style="background-color: #f5f5f5;" class="badge d-inline-block text-dark">IMEI Verified
+                        </div>
+                    </div>
+                    <a target="_blank" href="https://api.whatsapp.com/send/?phone=+62877-5240-6734&text=saya mau pesan"
+                        class="btn btn-primary mt-4">Pesan Sekarang</a>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-5">
+                <div class="card p-3 border-0" style="box-shadow: 0 30px 40px 0 rgba(212, 217, 232, .3);">
+                    <span
+                        style="border-radius: 0 0.375rem 0 0.375rem;position: absolute;top:0;right:0;background-color: #f55a3e;color: #fff;"
+                        class="px-2 py-1">12%</span>
+                    <img src="https://cdn.jagofon.com/model/jNkRTWWloYV6uBo3cUwL8C8ZCpRYinbnk1uU9pnn.jpg"
+                        class="rounded img-fluid" alt="">
+                    <h5 style="color: #242933;" class="mt-3">iPhone 13 Mini - 256 GB - Pink</h5>
+                    <p> <span class="fw-bold">Kondisi:</span> Mint</p>
+                    <div class="card-group">
+                        <i style="color: #FBD048;font-size: 1rem;" class='bx bxs-star'></i>
+                        <i style="color: #FBD048;font-size: 1rem;" class='bx bxs-star'></i>
+                        <i style="color: #FBD048;font-size: 1rem;" class='bx bx-star'></i>
+                        <i style="color: #FBD048;font-size: 1rem;" class='bx bx-star'></i>
+                        <i style="color: #FBD048;font-size: 1rem;" class='bx bx-star'></i>
+                    </div>
+                    <p class="fw-bold text-primary">Rp 13.700.000 <s style="color: #999;font-size: .75rem"
+                            class="product-item__price-new" data-v-26524ea4="">
+                            Rp&nbsp;15.499.000
+                        </s></p>
+                    <div class="d-flex flex-row gap-2">
+                        <div style="background-color: #f5f5f5;" class="badge d-inline-block text-dark">Resmi Indonesia
+                        </div>
+                        <div style="background-color: #f5f5f5;" class="badge d-inline-block text-dark">IMEI Verified
+                        </div>
+                    </div>
+                    <a target="_blank" href="https://api.whatsapp.com/send/?phone=+62877-5240-6734&text=saya mau pesan"
+                        class="btn btn-primary mt-4">Pesan Sekarang</a>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-5">
+                <div class="card p-3 border-0" style="box-shadow: 0 30px 40px 0 rgba(212, 217, 232, .3);">
+                    <span
+                        style="border-radius: 0 0.375rem 0 0.375rem;position: absolute;top:0;right:0;background-color: #f55a3e;color: #fff;"
+                        class="px-2 py-1">12%</span>
+                    <img src="https://cdn.jagofon.com/model/a268wUMA1P7UAKUQd1YN4lZQ7d2aYEsgCttSuDTu.png"
+                        class="rounded img-fluid" alt="">
+                    <h5 style="color: #242933;" class="mt-3">iPhone 13 Mini - 256 GB - Pink</h5>
+                    <p> <span class="fw-bold">Kondisi:</span> Mint</p>
+                    <div class="card-group">
+                        <i style="color: #FBD048;font-size: 1rem;" class='bx bxs-star'></i>
+                        <i style="color: #FBD048;font-size: 1rem;" class='bx bxs-star'></i>
+                        <i style="color: #FBD048;font-size: 1rem;" class='bx bxs-star'></i>
+                        <i style="color: #FBD048;font-size: 1rem;" class='bx bxs-star'></i>
+                        <i style="color: #FBD048;font-size: 1rem;" class='bx bx-star'></i>
+                    </div>
+                    <p class="fw-bold text-primary">Rp 13.700.000 <s style="color: #999;font-size: .75rem"
+                            class="product-item__price-new" data-v-26524ea4="">
+                            Rp&nbsp;15.499.000
+                        </s></p>
+                    <div class="d-flex flex-row gap-2">
+                        <div style="background-color: #f5f5f5;" class="badge d-inline-block text-dark">Resmi Indonesia
+                        </div>
+                        <div style="background-color: #f5f5f5;" class="badge d-inline-block text-dark">IMEI Verified
+                        </div>
+                    </div>
+                    <a target="_blank" href="https://api.whatsapp.com/send/?phone=+62877-5240-6734&text=saya mau pesan"
+                        class="btn btn-primary mt-4">Pesan Sekarang</a>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-5">
+                <div class="card p-3 border-0" style="box-shadow: 0 30px 40px 0 rgba(212, 217, 232, .3);">
+                    <span
+                        style="border-radius: 0 0.375rem 0 0.375rem;position: absolute;top:0;right:0;background-color: #f55a3e;color: #fff;"
+                        class="px-2 py-1">12%</span>
+                    <img src="https://cdn.jagofon.com/model/YoW2AOkOEuJbZrcGJE1kHIpVNdM27sT1JiZYRUEi.jpg"
+                        class="rounded img-fluid" alt="">
+                    <h5 style="color: #242933;" class="mt-3">iPhone 13 Mini - 256 GB - Pink</h5>
+                    <p> <span class="fw-bold">Kondisi:</span> Mint</p>
+                    <div class="card-group">
+                        <i style="color: #FBD048;font-size: 1rem;" class='bx bxs-star'></i>
+                        <i style="color: #FBD048;font-size: 1rem;" class='bx bxs-star'></i>
+                        <i style="color: #FBD048;font-size: 1rem;" class='bx bxs-star'></i>
+                        <i style="color: #FBD048;font-size: 1rem;" class='bx bx-star'></i>
+                        <i style="color: #FBD048;font-size: 1rem;" class='bx bx-star'></i>
+                    </div>
+                    <p class="fw-bold text-primary">Rp 13.700.000 <s style="color: #999;font-size: .75rem"
+                            class="product-item__price-new" data-v-26524ea4="">
+                            Rp&nbsp;15.499.000
+                        </s></p>
+                    <div class="d-flex flex-row gap-2">
+                        <div style="background-color: #f5f5f5;" class="badge d-inline-block text-dark">Resmi Indonesia
+                        </div>
+                        <div style="background-color: #f5f5f5;" class="badge d-inline-block text-dark">IMEI Verified
+                        </div>
+                    </div>
+                    <a target="_blank" href="https://api.whatsapp.com/send/?phone=+62877-5240-6734&text=saya mau pesan"
+                        class="btn btn-primary mt-4">Pesan Sekarang</a>
+                </div>
+            </div>
+        </div>
 </section>
 
 @endsection
