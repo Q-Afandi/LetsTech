@@ -1,7 +1,7 @@
-<nav class=" ">
-  <div class="max-w-screen-4xl flex flex-wrap items-center justify-between mx-auto p-4 ">
-    <div class="drop-shadow-2xl shadow-blue-900 bg-white mx-3 lg:mx-64 mt-2 rounded-full flex flex-1 max-w-full lg:max-h-20 items-center justify-between p-2" aria-label="Global">
-      <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
+<nav>
+  <div class="absolute z-10 w-full flex flex-wrap items-center justify-between mx-auto p-4">
+    <div class="bg-white drop-shadow-2xl  mx-3 lg:mx-64 mt-2  sm:rounded-none md:rounded-full flex flex-1 max-w-full lg:max-h-20 items-center justify-between p-2" aria-label="Global">
+      <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse ml-6">
           <img src="/src/img/logo.png" class="h-8" alt="Flowbite Logo" />
           <span class="self-center text-2xl font-semibold whitespace-nowrap text-primary">Up Gadget</span>
       </a>
@@ -11,7 +11,7 @@
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
           </svg>
       </button>
-      <div class="hidden w-full md:block md:w-auto pt-4" id="navbar-default">
+      <div class="hidden w-full md:block md:w-auto py-2" id="navbar-default">
         <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-5 rtl:space-x-reverse md:mt-0 md:border-0 ">
           <li>
             <a href="#about" class="block py-2 px-3 mt-1.5 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Tentang Kami</a>
@@ -20,21 +20,21 @@
             <a href="/product" class="block py-2 px-3 mt-1.5 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Product</a>
           </li>
           <li>
-            <a href="#" class="block py-2 px-3 mt-1.5 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Review</a>
+            <a href="/review" class="block py-2 px-3 mt-1.5 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Review</a>
           </li>
           <li>
-            <a href="#" class="block py-2 px-3 mt-1.5 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 me-16">Testimoni</a>
+            <a href="testimoni" class="block py-2 px-3 mt-1.5 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 me-16">Testimoni</a>
           </li>
           @auth
           <div class="relative items-center">
-            <div class="flex items-center ms-3">
+            <div class="flex items-center ">
               <div>
-                <button type="button" class="flex text-sm bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" aria-expanded="false" data-dropdown-toggle="dropdown-user">
+                <button type="button" class="flex text-sm me-6 bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" aria-expanded="false" data-dropdown-toggle="dropdown-user">
                   <span class="sr-only">Open user menu</span>
                   <img class="w-8 h-8 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-5.jpg" alt="user photo">
                 </button>
               </div>
-              <div class="absolute z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded shadow dark:bg-gray-700 dark:divide-gray-600" id="dropdown-user">
+              <div class="absolute z-50 hidden my-4 text-base list-none  divide-y divide-gray-100 rounded shadow bg-primary dark:divide-gray-600" id="dropdown-user">
                 <div class="px-4 py-3" role="none">
                   <p class="text-sm text-gray-900 dark:text-white" role="none">
                     Neil Sims
