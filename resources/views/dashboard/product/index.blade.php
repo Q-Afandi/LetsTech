@@ -41,31 +41,34 @@
                 </button>
             </div>
             <!-- Modal body -->
-            <form class="max-w-md mx-auto bg-gray-9" action="/dashboard/user/create" method="post">
+            <form class="max-w-md mx-auto bg-gray-9" action="/dashboard/product/create" method="post">
               @csrf
               <div class="relative z-0 w-full mb-5 group">
-                  <input type="nama_product" name="nama_product" id="nama_product" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 appearance-none border-gray-600 focus:border-blue-500 focus:outline-none focus:ring-0 peer" placeholder=" " required />
+                  <input type="text" name="nama_product" id="nama_product" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 appearance-none border-gray-600 focus:border-blue-500 focus:outline-none focus:ring-0 peer" placeholder=" " required />
                   <label for="nama_product" class="peer-focus:font-medium absolute text-sm text-gray-500  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Nama Product</label>
               </div>
-              
+              <div class="relative z-0 w-full mb-5 group">
+                <input type="text" name="slug" id="slug" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 appearance-none border-gray-600 focus:border-blue-500 focus:outline-none focus:ring-0 peer" placeholder=" " required />
+                <label for="slug" class="peer-focus:font-medium absolute text-sm text-gray-500  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Slug</label>
+            </div>
               <div class="grid md:grid-cols-2 md:gap-6">
                 <div class="relative z-0 w-full mb-5 group">
-                    <input type="text" name="harga" id="harga" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-                    <label for="harga" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Harga</label>
+                    <input type="text" name="harga" id="harga" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2  appearance-none  border-gray-600  focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                    <label for="harga" class="peer-focus:font-medium absolute text-sm text-gray-500  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Harga</label>
                 </div>
                 <div class="relative z-0 w-full mb-5 group">
-                    <input type="text" name="jumlah" id="floating_last_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-                    <label for="jumlah" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Jumlah</label>
+                    <input type="text" name="stok" id="floating_last_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2  appearance-none  border-gray-600  focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                    <label for="stok" class="peer-focus:font-medium absolute text-sm text-gray-500  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Stok</label>
                 </div>
               </div>
               <div class="col-span-2 sm:col-span-1 mb-5">
                 <label for="category" class="block mb-2 text-sm font-medium text-gray-900">Category</label>
-                <select id="category" class="bg-gray-50 border border-gray-900 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5  placeholder-gray-400 ">
+                <select id="category" name="kategori_id" class="bg-gray-50 border border-gray-900 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5  placeholder-gray-400 ">
                     <option selected="">Select category</option>
-                    <option value="TV">Apple</option>
-                    <option value="PC">Redmi</option>
-                    <option value="GA">Lenovo</option>
-                    <option value="PH">Samsung</option>
+                    <option value="1">Apple</option>
+                    <option value="2">Redmi</option>
+                    <option value="3">Oppo</option>
+                    <option value="4">Samsung</option>
                 </select>
             </div>
               <div class="relative z-0 w-full mb-5 group">
@@ -73,7 +76,7 @@
                   <label for="deskripsi" class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Deskripsi</label>
               </div>
               <div class="relative z-0 w-full mb-5 group">
-                    <input type="gambar"  name="gambar" id="gambar" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 appearance-none border-gray-600 focus:border-blue-500 focus:outline-none focus:ring-0 peer" placeholder=" " required />
+                    <input type="text"  name="gambar" id="gambar" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 appearance-none border-gray-600 focus:border-blue-500 focus:outline-none focus:ring-0 peer" placeholder=" " required />
                     <label for="gambar" class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Gambar</label>
               </div>
           
@@ -110,11 +113,15 @@
                     Nama Product
                 </th>
                 <th scope="col" class="w-8 px-14 py-3">
+                    Kategori
+                </th>  
+                <th scope="col" class="w-8 px-14 py-3">
                     Harga
                 </th>
                 <th scope="col" class="w-8 px-14 py-3">
                     Jumlah
-                </th>                
+                </th>    
+                             
                 <th scope="col" class="w-5 px-6 py-3">
                     Action
                 </th>
@@ -130,17 +137,19 @@
                     {{ $product->nama_product }}
                 </td>
                 <td class="px-12 py-4 text-center">
-                    {{ $product->harga }}
+                    {{ $product->kategori->name }}
                 </td>
                 <td class="px-12 py-4 text-center">
-                    {{ $product->jumlah }}
+                    Rp. {{ $product->harga }}
                 </td>
-                
+                <td class="px-12 py-4 text-center">
+                    {{ $product->stok }}
+                </td>
                 <td class="flex justify-center px-10 py-6">
                     <!-- Modal toggle -->
-                    <a href="/dashboard/user/{{ $product->id }}/view"><span data-feather="eye"></span></a>
-                    <a href="/dashboard/user/{{ $product->id }}/edit"><span data-feather="edit"></span></a>
-                    <form action="/dashboard/user/{{ $product->id }}" method="post">
+                    <a href="/dashboard/product/{{ $product->id }}/view"><span data-feather="eye"></span></a>
+                    <a href="/dashboard/product/{{ $product->id }}/edit"><span data-feather="edit"></span></a>
+                    <form action="/dashboard/product/{{ $product->id }}" method="post">
                         @csrf
                         @method('delete')
                         <button><span data-feather="trash-2"></span></button>

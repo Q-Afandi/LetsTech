@@ -30,7 +30,19 @@ class DashboardProductController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validatedData = $request->validate([
+            'nama_product' => 'required|max:255',
+            'harga' => 'required|max:255',
+            'slug' => 'required',
+            'stok' => 'required|max:255',
+            'kategori_id' => 'required' ,
+            'deskripsi' => 'required|max:255',
+            'gambar' => 'required|max:255',
+        ]);
+
+        Product::create($validatedData);
+
+        return redirect('/dashboard/product');
     }
 
     /**
@@ -44,24 +56,40 @@ class DashboardProductController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(Product $product)
     {
-        //
+        return view('dashboard.product.edit', [
+            'product' => $product
+            
+        ]);
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, Product $product)
     {
-        //
+        $validatedData = $request->validate([
+            'nama_product' => 'required|max:255',
+            'harga' => 'required|max:255',
+            'slug' => 'required',
+            'stok' => 'required|max:255',
+            'kategori_id' => 'required' ,
+            'deskripsi' => 'required|max:255',
+            'gambar' => 'required|max:255',
+        ]);
+
+        Product::where('id', $product->id)->update($validatedData);
+
+        return redirect('/dashboard/product');
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(Product $product)
     {
-        //
+        Product::destroy($product->id);
+        return redirect('/dashboard/product');
     }
 }

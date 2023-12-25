@@ -24,23 +24,26 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/login', [LoginController::class, 'index'])->name('login');
+Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
+Route::post('/login', [LoginController::class, 'authenticate']);
+Route::post('/logout', [LoginController::class, 'logout']);
 
-Route::get('/register', [RegisterController::class, 'index'])->name('register');
+Route::get('/register', [RegisterController::class, 'index'])->middleware('guest');
+Route::post('/register', [RegisterController::class, 'store']);
 
 // Dashboard Admin
 Route::get('/dashboard', function() {
     return view('dashboard.index');
-});
+})->middleware('auth');
 
+// USER
 Route::resource('/dashboard/user/', DashboardUserController::class);
-
 Route::get('/dashboard/user/{user:id}/edit', [DashboardUserController::class, 'edit']);
-
 Route::post('/dashboard/user/{user:id}/update', [DashboardUserController::class, 'update']);
-
 Route::delete('/dashboard/user/{user:id}', [DashboardUserController::class, 'destroy']);
+Route::post('/dashboard/user/create', [DashboardUserController::class, 'store']);
 
+// Product
 Route::get('/kategoris/{kategori:slug}', function(Kategori $kategori){
     return view('kategori', [
         'name' => "Post By Category : {$kategori->nama}",
@@ -48,10 +51,12 @@ Route::get('/kategoris/{kategori:slug}', function(Kategori $kategori){
     ]);
 });
 
-Route::post('/dashboard/user/create', [DashboardUserController::class, 'store']);
-
 Route::resource('/dashboard/product/', DashboardProductController::class);
 
+Route::post('/dashboard/product/create', [DashboardProductController::class, 'store']);
+Route::get('/dashboard/product/{product:id}/edit', [DashboardProductController::class, 'edit']);
+Route::post('/dashboard/product/{product:id}/update', [DashboardProductController::class, 'update']);
+Route::delete('/dashboard/product/{product:id}', [DashboardProductController::class, 'destroy']);
 // End Dashboard Admin
 
 Route::get('/product', function () {
