@@ -2,19 +2,18 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Kategori;
-use Illuminate\Http\Request;
+use App\Models\Cart;
+use App\Http\Requests\StoreCartRequest;
+use App\Http\Requests\UpdateCartRequest;
 
-class DashboardKategoriController extends Controller
+class CartController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('dashboard.product.index', [
-            'kategoris' => Kategori::all()
-        ]);
+        //
     }
 
     /**
@@ -28,7 +27,7 @@ class DashboardKategoriController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(StoreCartRequest $request)
     {
         //
     }
@@ -36,7 +35,7 @@ class DashboardKategoriController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Kategori $kategori)
+    public function show(Cart $cart)
     {
         //
     }
@@ -44,7 +43,7 @@ class DashboardKategoriController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Kategori $kategori)
+    public function edit(Cart $cart)
     {
         //
     }
@@ -52,7 +51,7 @@ class DashboardKategoriController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Kategori $kategori)
+    public function update(UpdateCartRequest $request, Cart $cart)
     {
         //
     }
@@ -60,7 +59,7 @@ class DashboardKategoriController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Kategori $kategori)
+    public function destroy(Cart $cart)
     {
         //
     }

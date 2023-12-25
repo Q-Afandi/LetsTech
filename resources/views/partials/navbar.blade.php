@@ -25,9 +25,40 @@
           <li>
             <a href="#" class="block py-2 px-3 mt-1.5 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 me-16">Testimoni</a>
           </li>
-          <li>
-            <a href ="/login" <button type="button" class=" text-white bg-blue-900 hover:bg-blue-800 font-sm rounded-full text-sm px-8 py-2 text-center me-5 mb-2 ">Login</button></a>
-          </li>
+          @auth
+          <div class="relative items-center">
+            <div class="flex items-center ms-3">
+              <div>
+                <button type="button" class="flex text-sm bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" aria-expanded="false" data-dropdown-toggle="dropdown-user">
+                  <span class="sr-only">Open user menu</span>
+                  <img class="w-8 h-8 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-5.jpg" alt="user photo">
+                </button>
+              </div>
+              <div class="absolute z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded shadow dark:bg-gray-700 dark:divide-gray-600" id="dropdown-user">
+                <div class="px-4 py-3" role="none">
+                  <p class="text-sm text-gray-900 dark:text-white" role="none">
+                    Neil Sims
+                  </p>
+                  <p class="text-sm font-medium text-gray-900 truncate dark:text-gray-300" role="none">
+                    neil.sims@flowbite.com
+                  </p>
+                </div>
+                <ul class="py-1" role="none">
+                  <li>
+                    <form action="/logout" method="post">
+                      @csrf
+                      <button type="submit" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">Sign out</button>
+                    </form>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+              @else
+              <li>
+                <a href ="/login" <button type="button" class=" text-white bg-blue-900 hover:bg-blue-800 font-sm rounded-full text-sm px-8 py-2 text-center me-5 mb-2 ">Login</button></a>
+              </li>
+          @endauth
         </ul>
 
       </div>
