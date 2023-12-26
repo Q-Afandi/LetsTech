@@ -57,8 +57,17 @@ Route::post('/dashboard/product/create', [DashboardProductController::class, 'st
 Route::get('/dashboard/product/{product:id}/edit', [DashboardProductController::class, 'edit']);
 Route::post('/dashboard/product/{product:id}/update', [DashboardProductController::class, 'update']);
 Route::delete('/dashboard/product/{product:id}', [DashboardProductController::class, 'destroy']);
+Route::get('/dashboard/product/cetak', [DashboardProductController::class, 'cetak']);
 // End Dashboard Admin
 
 Route::get('/product', function () {
     return view('product');
+});
+
+Route::get('/review', function () {
+    return view('product');
+});
+
+Route::get('/testimoni', function () {
+    return view('testimoni');
 });

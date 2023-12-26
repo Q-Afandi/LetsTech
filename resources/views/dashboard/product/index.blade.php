@@ -15,11 +15,19 @@
         </div>
     </div>
     <div class="relative overflow-x-auto">
-        <div class="flex items-center justify-between flex-column  md:flex-row flex-wrap px-6 py-2 bg-gray-900">
+        <div class="flex items-center flex-column  md:flex-row flex-wrap px-6 py-2 bg-gray-900">
             {{-- Button Tambah --}}
         <button data-modal-target="default-modal" data-modal-toggle="default-modal" class="relative inline-flex p-0.5 mb-2 me-4 overflow-hidden text-sm font-medium rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 text-white focus:ring-4 focus:outline-none focus:ring-green-200 ">
-            <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-gray-900 rounded-md group-hover:bg-opacity-0">
+            <span class="flex flex-row px-5 py-2.5 transition-all ease-in duration-75 bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                <span data-feather="plus"></span>
                 Tambah Data
+            </span>
+        </button>
+        {{-- button PDF --}}
+        <button onclick="window.location.href='/dashboard/product/cetak'" class="relative inline-flex p-0.5 mb-2 me-4 overflow-hidden text-sm font-medium rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 text-white focus:ring-4 focus:outline-none focus:ring-green-200 ">
+            <span class="flex flex-row px-5 py-2.5 transition-all ease-in duration-75 bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                <span data-feather="printer"></span>
+                Print To PDF
             </span>
         </button>
 
