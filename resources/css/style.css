@@ -7,6 +7,66 @@ body {
     color: #fff !important;
 }
 
+.container {
+    max-width: 1124px;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+.title {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.list-phone {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.list-phone-item {
+    color: #2a9aeb;
+    cursor: pointer;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
+    border: 1px solid #2a9aeb;
+}
+
+.active-list-phone-item {
+    background-color: #2a9aeb;
+    color: #fff;
+}
+
+.grid {
+    row-gap: 2rem;
+}
+
+.col {
+    margin-bottom: 1.5rem;
+}
+
+.card {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 1rem;
+    position: relative;
+    box-shadow: 0 30px 40px 0 rgba(212, 217, 232, 0.3);
+}
+
+.card img {
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+}
+
+.card iframe {
+    width: 100%;
+    border: none;
+    border-radius: 0.5rem;
+}
+
 .card__container {
     padding-block: 2rem;
 }
