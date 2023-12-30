@@ -93,49 +93,77 @@
 </section>
 {{-- End Tes --}}
 
-
 <!-- about -->
-<section id="about" class="pt-30 pb-32 mx-52 mt-52">
-        <div class="container px-10">
-            <div class="flex flex-wrap text-center items-center justify-center">
-                <div class ="flex flex-col px-25 mb-26 lg:w-3/5 p-5">
-                    <h2 class="text-center font-bold text-black text-3xl mb-4 lg:w-3/4 lg:mb-12 ">Tentang Kami</h2>
-                    <p class="text-center  text-black text-35 mb-4 lg:w-3/4 lg:mb-12">Di UpGadget kamu bisa beli gadget dengan kualitas terjamin.Setiap produk sudah melewati prosedur pengecekan secara detail dan menyeluruh. Dengan standar yang sangat jelas.</p>
-                    
-                </div>
-                <section class="md:mb-4 container px-4 md:px-8 lg:px-16 mx-auto py-5 flex flex-wrap items-center">
-                <div class="w-full lg:w-1/2 flex mb-4">
-                    <img src="/src/img/cewe.png" class="h-30 md:h-40 lg:h-auto w-auto" alt>
-                </div>
-                <div class="w-full px-4 lg:w-1/2 border rounded-lg shadow-lg text-left">
-                    <h3 class="font-bold text-primary text-20 mb-3">Cerita Kami</h3>
-                    <h5 class="font-bold text-10 mb-3">Dimulai pada tahun 2021 dan telah berkembang menjadi mitra yang terpercaya dalam pasar elektronik di Indonesia.</h5>
-                    <p clas=" font-medium text-10 mb-3">Perjalanan kami telah didorong oleh komitmen kami yang teguh terhadap kepuasan pelanggan. Tujuan kami sebagai sebuah platform adalah untuk membantu Anda menjual dan membeli gadget yang tepat dengan harga yang sesuai dan mendapatkan pengalaman terbaik. Ambisi kami pun menjadi lebih tinggi ketika kami menjadi bagian dari Carousell Group pada tahun 2022.</p>
-
-                </div>
-                </section>
+<section id="about" bg-b class="pt-30 pb-32 mx-52 mt-52">
+    <div class="container mx-auto w-full px-4 lg:w-3/4 border rounded-lg shadow-lg">
+        <div class="flex justify-between items-center">
+            <div class ="flex flex-col px-25 mb-48 lg:w-3/5 p-5">
+                <h2 class="font-bold text-black text-center text-3xl mb-3 lg:w-3/4 lg:mb-12 ">Tentang Kami</h2>     
+                <blockquote class="text-center  italic font-semibold text-black-500 dark:text-white">
+                    <p>"Di UpGadget kamu bisa beli gadget dengan kualitas terjamin.Setiap produk sudah melewati prosedur pengecekan secara detail dan menyeluruh. Dengan standar yang sangat jelas."</p>
+                </blockquote>
+            </div>
+            <div class="w-3/5">
+                <img src="/src/img/cewe.png" alt="" >
             </div>
         </div>
+    </div>
+    <div>
+        <div class="flex justify-between items-center">
+            <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
+            <blockquote class="text-center  italic font-semibold text-gray-600 dark:text-white">
+                <p>"Di UpGadget kamu bisa beli gadget dengan kualitas terjamin.Setiap produk sudah melewati prosedur pengecekan secara detail dan menyeluruh. Dengan standar yang sangat jelas."</p>
+            </blockquote>
+        </div>
+    </div>
+
 </section>
 
+
 <!-- review -->
-<section class="justify-items-center w-fit lg:mx-4 mt-7 flex flex-auto max-w pt-2 items-center justify-between">
-    <div class="flex flex-col justify-items-center mb-5 text-center">
-        <h2 class="mb-2 font-bold">Berbagai Cerita Dari #ReviewerGaget</h2>
-    </div>
-    <div class="max-w-xl mx-auto">
-        <div class="" dir="ltr">
-        {{-- <div id="divHomeTestimonialSectionNext" class="bg-gray-200 hover:bg-primary absolute w-8 h-8 rounded-full items-center justify-center cursor-pointer shadow-lg group transition-colors">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="group-hover:text-white rotate-180 hidden">
-                <path d="M15 20.67C14.81 20.67 14.62 20.6 14.47 20.45L7.95003 13.93C6.89003 12.87 6.89003 11.13 7.95003 10.07L14.47 3.55002C14.76 3.26002 15.24 3.26002 15.53 3.55002C15.82 3.84002 15.82 4.32002 15.53 4.61002L9.01003 11.13C8.53003 11.61 8.53003 12.39 9.01003 12.87L15.53 19.39C15.82 19.68 15.82 20.16 15.53 20.45C15.38 20.59 15.19 20.67 15 20.67Z" fill="currentColor"></path>
-            </svg>
-        </div> --}}
+<section>
+    <div class="container mx-auto py-12 pt-15 mt-24">
+        <h3 class="text-center text-xl font-semibold ">Review Dari Customer </h3>
+        <div class="flex gap-3 mt-5">
+            <div class="mx-auto p-10 rounded-xl shadow-lg">
+                <div class="flex">
+                    <div class="w-1/4">
+                        <img class ="w-10" src="/src/img/testimoni1.png" alt>
+                    </div>
+                    <h4 class="text-left w-3/4 font-bold">Freya</h4>
+                </div>
+                <p class="mt-2">
+                    Layanannya sangat oke dan rekomen untuk membeli handphone
+                </p>
+            </div>
+            <div class="mx-auto p-10 rounded-xl shadow-lg">
+                <div class="flex">
+                    <div class="w-1/4">
+                        <img class ="w-10" src="/src/img/testimoni2.png" alt>
+                    </div>
+                    <h4 class="w-3/4 font-bold">Ucup</h4>
+                </div>
+                <p class="mt-2">
+                    Selama pemakaian 3 bulan ini aman-aman saja tidak ada kendala apapun.
+                </p>
+            </div>
+            <div class="mx-auto p-10 rounded-xl shadow-lg">
+                <div class="flex">
+                    <div class="w-1/4">
+                        <img class ="w-10" src="/src/img/testimoni3.png" alt>
+                    </div>
+                    <h4 class="w-3/4 font-bold">Susi</h4>
+                </div>
+                <p class="mt-2">
+                    harga yang ditawar cukup terjangkau dan service cukup memuaskan.
+                </p>
+            </div>
+
         </div>
     </div>
 </section>
 
-  
-  
+
 </div>
 </section>
 
