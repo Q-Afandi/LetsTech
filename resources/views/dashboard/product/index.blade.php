@@ -15,7 +15,7 @@
         </div>
     </div>
     <div class="relative overflow-x-auto">
-        <div class="flex items-center flex-column  md:flex-row flex-wrap px-6 py-2 bg-gray-900">
+        <div class="flex items-center flex-between  md:flex-row flex-wrap px-6 py-2 bg-gray-900">
             {{-- Button Tambah --}}
         <button data-modal-target="default-modal" data-modal-toggle="default-modal" class="relative inline-flex p-0.5 mb-2 me-4 overflow-hidden text-sm font-medium rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 text-white focus:ring-4 focus:outline-none focus:ring-green-200 ">
             <span class="flex flex-row px-5 py-2.5 transition-all ease-in duration-75 bg-gray-900 rounded-md group-hover:bg-opacity-0">
@@ -49,7 +49,7 @@
                 </button>
             </div>
             <!-- Modal body -->
-            <form class="max-w-md mx-auto bg-gray-9" action="/dashboard/product/create" method="post">
+            <form class="max-w-md mx-auto bg-gray-9" action="/dashboard/product/create" method="post" enctype="multipart/form-data">
               @csrf
               <div class="relative z-0 w-full mb-5 group">
                   <input type="text" name="nama_product" id="nama_product" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 appearance-none border-gray-600 focus:border-blue-500 focus:outline-none focus:ring-0 peer" placeholder=" " required />
@@ -84,7 +84,7 @@
                   <label for="deskripsi" class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Deskripsi</label>
               </div>
               <div class="relative z-0 w-full mb-5 group">
-                    <input type="text"  name="gambar" id="gambar" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 appearance-none border-gray-600 focus:border-blue-500 focus:outline-none focus:ring-0 peer" placeholder=" " required />
+                    <input type="file"  name="gambar" id="gambar" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 appearance-none border-gray-600 focus:border-blue-500 focus:outline-none focus:ring-0 peer" placeholder=" " required />
                     <label for="gambar" class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Gambar</label>
               </div>
           
@@ -110,13 +110,15 @@
     </div>
 <div class="w-full"> 
             {{-- Table --}}
-        <table class="w-full text-sm  text-gray-500  ">
+        <table class="w-full text-sm  text-gray-500 ">
             <thead class=" text-gray-50 uppercase bg-gray-900 ">
             <tr>
                 <th scope="col" class="w-2 px-6 py-3">
                     No
                 </th>
-                
+                <th scope="col" class="w-8 px-14 py-3">
+                    Gambar
+                </th>
                 <th scope="col" class="w-8 px-14 py-3">
                     Nama Product
                 </th>
@@ -142,6 +144,9 @@
                     <div class="text-base font-semibold item-center">{{ $loop->iteration }}</div>
                 </td>
                 <td class="px-14 py-4 text-center">
+                    <img src="{{ asset('storage/' . $product->gambar) }}" class="rounded-2xl w-16 h-16">
+                </td>
+                <td class="px-14 py-4 text-center">
                     {{ $product->nama_product }}
                 </td>
                 <td class="px-12 py-4 text-center">
@@ -153,7 +158,7 @@
                 <td class="px-12 py-4 text-center">
                     {{ $product->stok }}
                 </td>
-                <td class="flex justify-center px-10 py-6">
+                <td class="flex px-12 py-10 text-center">
                     <!-- Modal toggle -->
                     <a href="/dashboard/product/{{ $product->id }}/view"><span data-feather="eye"></span></a>
                     <a href="/dashboard/product/{{ $product->id }}/edit"><span data-feather="edit"></span></a>

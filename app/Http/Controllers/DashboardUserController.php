@@ -40,6 +40,8 @@ class DashboardUserController extends Controller
         // $validatedData['excerpt'] = Str::limit(strip_tags($request->body, 100));
         // $validatedData['excerpt'] = substr($request->body, 0, 255);
 
+
+        
         User::create($validatedData);
 
         return redirect('/dashboard/user');

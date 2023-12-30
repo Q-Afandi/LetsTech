@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Product;
+use App\Models\Kategori;
 use Illuminate\Http\Request;
+
 
 class DashboardProductController extends Controller
 {
@@ -37,6 +39,8 @@ class DashboardProductController extends Controller
      */
     public function store(Request $request)
     {
+       
+
         $validatedData = $request->validate([
             'nama_product' => 'required|max:255',
             'harga' => 'required|max:255',
@@ -44,8 +48,12 @@ class DashboardProductController extends Controller
             'stok' => 'required|max:255',
             'kategori_id' => 'required' ,
             'deskripsi' => 'required|max:255',
-            'gambar' => 'required|max:255',
+            'gambar' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg,webp|max:2048', 
         ]);
+        
+        if ($request->file('gambar')) {
+            $validatedData['gambar'] = $request->file('gambar')->store('product-gambar');
+        }
 
         Product::create($validatedData);
 
