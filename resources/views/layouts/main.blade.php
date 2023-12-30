@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <!-- styles -->
     <link href="{{ asset('asset/css/owl.carousel.min')}}" rel="stylesheet">
 
@@ -23,7 +25,11 @@
 
 </body>
 <!-- Scripts -->
+<script src="{{  asset('assets/js/swiper-bundle.min.js')}}"></script>
+<script src="{{  asset('assets/js/mixitup.min.js')}}"></script>
+<script src="{{  asset('assets/js/main.js')}}"></script>
 <script src="{{ asset('asset/css/owl.carousel.min')}}" ></script>
+
 <script>
     $('.owl-carousel').owlCarousel({
         loop:true,
@@ -45,5 +51,6 @@
             }
         }
     })
+    
 </script>
 </html>

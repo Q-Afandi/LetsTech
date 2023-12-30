@@ -99,7 +99,7 @@
         <div class="flex justify-between items-center">
             <div class ="flex flex-col px-25 mb-48 lg:w-3/5 p-5">
                 <h2 class="font-bold text-black text-center text-3xl mb-3 lg:w-3/4 lg:mb-12 ">Tentang Kami</h2>     
-                <blockquote class="text-center  italic font-semibold text-black-500 dark:text-white">
+                <blockquote class="text-center  italic font-semibold text-black-500 ">
                     <p>"Di UpGadget kamu bisa beli gadget dengan kualitas terjamin.Setiap produk sudah melewati prosedur pengecekan secara detail dan menyeluruh. Dengan standar yang sangat jelas."</p>
                 </blockquote>
             </div>
@@ -111,7 +111,7 @@
     <div>
         <div class="flex justify-between items-center">
             <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
-            <blockquote class="text-center  italic font-semibold text-gray-600 dark:text-white">
+            <blockquote class="text-center  italic font-semibold text-gray-600 ">
                 <p>"Di UpGadget kamu bisa beli gadget dengan kualitas terjamin.Setiap produk sudah melewati prosedur pengecekan secara detail dan menyeluruh. Dengan standar yang sangat jelas."</p>
             </blockquote>
         </div>
