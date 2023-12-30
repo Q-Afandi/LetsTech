@@ -31,6 +31,11 @@ Route::post('/logout', [LoginController::class, 'logout']);
 Route::get('/register', [RegisterController::class, 'index'])->middleware('guest');
 Route::post('/register', [RegisterController::class, 'store']);
 
+// Google Auth
+Route::get('/auth/google',[App\Http\Controllers\GoogleController::class, 'redirectToGoogle'])->name('google.login')->middleware('guest');
+Route::get('/auth/goggle/callback/',[App\Http\Controllers\GoogleController::class, 'handleGoogleCallBack'])->name('google.callback')->middleware('guest');
+
+
 // Dashboard Admin
 Route::get('/dashboard', function() {
     return view('dashboard.index');
@@ -44,7 +49,7 @@ Route::delete('/dashboard/user/{user:id}', [DashboardUserController::class, 'des
 Route::post('/dashboard/user/create', [DashboardUserController::class, 'store']);
 
 // Product
-Route::get('/kategoris/{kategori:slug}', function(Kategori $kategori){
+Route::get('/kategoris/{kategori:id}', function(Kategori $kategori){
     return view('kategori', [
         'name' => "Post By Category : {$kategori->nama}",
         'active' => 'kategoris'

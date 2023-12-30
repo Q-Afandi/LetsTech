@@ -17,7 +17,7 @@
     @include('dashboard.layouts.header')
     <div class="sm:ml-60 mx-1 ">
       @include('dashboard.layouts.sidebar')
-         <main class="mx-7 my-24">   
+         <main class=" my-24">   
           @yield('container')
             
          </main>
