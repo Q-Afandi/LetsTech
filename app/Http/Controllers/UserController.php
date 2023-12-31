@@ -2,18 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Cart;
-use App\Http\Requests\StoreCartRequest;
-use App\Http\Requests\UpdateCartRequest;
+use App\Models\User;
+use Illuminate\Http\Request;
 
-class CartController extends Controller
+class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        //
+        return view('/partials/navbar', [
+            'users' => User::all()
+        ]);
     }
 
     /**
@@ -27,7 +28,7 @@ class CartController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreCartRequest $request)
+    public function store(Request $request)
     {
         //
     }
@@ -35,15 +36,17 @@ class CartController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Cart $cart)
+    public function show(User $user)
     {
-        //
+        return view('/partials/navbar', [
+            'user' => $user
+        ]);
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Cart $cart)
+    public function edit(User $user)
     {
         //
     }
@@ -51,7 +54,7 @@ class CartController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateCartRequest $request, Cart $cart)
+    public function update(Request $request, User $user)
     {
         //
     }
@@ -59,7 +62,7 @@ class CartController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Cart $cart)
+    public function destroy(User $user)
     {
         //
     }

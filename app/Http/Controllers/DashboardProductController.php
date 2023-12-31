@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Product;
 use App\Models\Kategori;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 
 class DashboardProductController extends Controller
@@ -39,7 +40,7 @@ class DashboardProductController extends Controller
      */
     public function store(Request $request)
     {
-       
+        // dd($request->all());
 
         $validatedData = $request->validate([
             'nama_product' => 'required|max:255',
@@ -47,7 +48,7 @@ class DashboardProductController extends Controller
             'slug' => 'required',
             'stok' => 'required|max:255',
             'kategori_id' => 'required' ,
-            'deskripsi' => 'required|max:255',
+            'deskripsi' => 'required',
             'gambar' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg,webp|max:2048', 
         ]);
         
@@ -84,15 +85,24 @@ class DashboardProductController extends Controller
      */
     public function update(Request $request, Product $product)
     {
-        $validatedData = $request->validate([
+        $rules =[
             'nama_product' => 'required|max:255',
             'harga' => 'required|max:255',
             'slug' => 'required',
             'stok' => 'required|max:255',
             'kategori_id' => 'required' ,
             'deskripsi' => 'required|max:255',
-            'gambar' => 'required|max:255',
-        ]);
+            'gambar' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg,webp|max:2048',
+        ];
+
+        $validatedData = $request->validate($rules);
+
+        if ($request->file('gambar')) {
+            if($request->oldImage) {
+                Storage::delete($request->oldImage);
+             }
+            $validatedData['gambar'] = $request->file('gambar')->store('product-gambar');
+        };
 
         Product::where('id', $product->id)->update($validatedData);
 

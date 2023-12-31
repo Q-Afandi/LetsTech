@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class DashboardUserController extends Controller
 {
@@ -34,13 +35,16 @@ class DashboardUserController extends Controller
             'name' => 'required|max:255',
             'email' => 'required|max:255',
             'password' => 'required|max:255',
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg,webp|max:2048',
         ]);
 
         // $validatedData['user_id'] = auth()->user()->id;
         // $validatedData['excerpt'] = Str::limit(strip_tags($request->body, 100));
         // $validatedData['excerpt'] = substr($request->body, 0, 255);
 
-
+        if ($request->file('gambar')) {
+            $validatedData['gambar'] = $request->file('gambar')->store('user-gambar');
+        }
         
         User::create($validatedData);
 
@@ -75,14 +79,25 @@ class DashboardUserController extends Controller
      */
     public function update(Request $request, User $user)
     {
-        $validatedData = $request->validate([
+        $rules =[
             'name' => 'required|max:255',
             'email' => 'required|max:255',
             'password' => 'required|max:255',
-        ]);
+            'gambar' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg,webp|max:2048',
+        
+        ];
+
+        $validatedData = $request->validate($rules);
 
         User::where('id', $user->id)->update($validatedData);
 
+        if ($request->file('gambar')) {
+            if($request->oldImage) {
+                Storage::delete($request->oldImage);
+             }
+            $validatedData['gambar'] = $request->file('gambar')->store('user-gambar');
+        };
+        
         return redirect('/dashboard/user');
     }
 

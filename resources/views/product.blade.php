@@ -2,47 +2,63 @@
 
 @section('container')
 
-<section id="product" class="translate-y-28 pb-80">
-<div class="container">
 
-<div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-    <a href="#">
-        <img class="p-8 rounded-t-lg" src="/docs/images/products/apple-watch.png" alt="product image" />
-    </a>
-    <div class="px-5 pb-5">
-        <a href="#">
-            <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Apple Watch Series 7 GPS, Aluminium Case, Starlight Sport</h5>
-        </a>
-        <div class="flex items-center mt-2.5 mb-5">
-            <div class="flex items-center space-x-1 rtl:space-x-reverse">
-                <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-                </svg>
-                <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-                </svg>
-                <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-                </svg>
-                <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-                </svg>
-                <svg class="w-4 h-4 text-gray-200 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-                </svg>
-            </div>
-            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-3">5.0</span>
+<section class="pt-40 pb-20">
+    {{-- Kategori --}}
+    <div class="container px-10 mx-auto">
+        <div class="mb-5 text-center">
+            <h1 class="w-full text-4xl text-black font-semibold">Merk Handphone</h1>
         </div>
-        <div class="flex items-center justify-between">
-            <span class="text-3xl font-bold text-gray-900 dark:text-white">$599</span>
-            <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
+        {{-- Card --}}
+        <div class="flex gap-5 justify-center"> {{-- Menambahkan class justify-center untuk mengatur item di tengah --}}
+            @foreach ($kategoris as $kategori)
+                <div class="w-24 h-24 max-w-sm rounded-2xl shadow-2xl  bg-white  ">
+                    <form action="/product" enctype="multipart/form-data">
+                        <input type="hidden" name="kategori" value="{{ $kategori->name }}">
+                        <button type="submit">
+                            <img class="p-2 w-56 mx-auto" src="{{ asset('storage/' . $kategori->gambar) }}"
+                                alt="kategori image" />
+                        </button>
+                    </form>
+                </div>
+            @endforeach
         </div>
+        {{-- End Card --}}
     </div>
-</div>
-
-
-</div>
 </section>
+
+
+{{-- section product --}}
+{{-- section product --}}
+<section id="product" class="pt-20 pb-80 mx-4 sm:mx-10 md:mx-20 lg:mx-32 xl:mx-40">
+    {{-- Card --}}
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 justify-center">
+        @foreach ($products as $product)
+            <div class="w-56 max-w-sm rounded-2xl shadow-2xl border bg-gray-50 border-gray-700">
+                <a href="#">
+                    <img class="p-2 w-56 mx-auto" src="{{ asset('storage/' . $product->gambar) }}"
+                        alt="product image" />
+                </a>
+                <div class="p-2 w-56 pb-5">
+                    <a href="#">
+                        <h5 class="text-xl font-semibold tracking-tight text-gray-900 ">{{ $product->nama_product }}</h5>
+                    </a>
+                    <div class="mt-2">
+                        <span class="text-3xl font-bold text-gray-900 ">Rp. {{ $product->harga }}</span>
+                    </div>
+                    <div class="mt-5">
+                        <a href="https://api.whatsapp.com/send/?phone=+62877-5240-6734&text=saya mau pesan"
+                            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                            Pesan Sekarang
+                        </a>
+                    </div>
+                </div>
+            </div>
+        @endforeach
+    </div>
+    {{-- End Card --}}
+</section>
+
 
 @endsection
 
