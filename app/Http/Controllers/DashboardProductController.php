@@ -15,9 +15,19 @@ class DashboardProductController extends Controller
      */
     public function index()
     {
+        $products = Product::latest();
+
+        if(request('search')) {
+            $products->where('nama_product', 'like', '%' . request('search') . '%');
+        }
+
         return view('dashboard.product.index', [
-            'products' => Product::all()
+            'products' => Product::all(),
+            'products' => $products->get()
+
         ]);
+
+
     }
 
     public function cetak()

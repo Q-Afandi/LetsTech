@@ -9,6 +9,7 @@
    
 
     @vite(['./resources/css/app.css', './resources/js/app.js'])
+    
 
     <title>UpGadget</title>
 </head>
@@ -19,10 +20,12 @@
       @include('dashboard.layouts.sidebar')
          <main class=" my-24">   
           @yield('container')
+          
             
          </main>
     </div>     
   </div>
+  
 </body>
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://unpkg.com/feather-icons"></script>
