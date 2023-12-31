@@ -14,7 +14,7 @@
       <div class="hidden w-full md:block md:w-auto py-2" id="navbar-default">
         <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-5 rtl:space-x-reverse md:mt-0 md:border-0 ">
           <li>
-            <a href="#about" class="block py-2 px-3 mt-1.5 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Tentang Kami</a>
+            <a href="/about" class="block py-2 px-3 mt-1.5 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Tentang Kami</a>
           </li>
           <li>
             <a href="/product" class="block py-2 px-3 mt-1.5 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Product</a>
@@ -27,20 +27,28 @@
           </li>
           @auth
           <div class="relative items-center">
+            
             <div class="flex items-center ">
               <div>
                 <button type="button" class="flex text-sm me-6 bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" aria-expanded="false" data-dropdown-toggle="dropdown-user">
                   <span class="sr-only">Open user menu</span>
-                  <img class="w-8 h-8 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-5.jpg" alt="user photo">
+                  @if (auth()->user()->image)
+                    <img src="{{ asset('storage/' . auth()->user()->image) }}" class="rounded-2xl w-16 h-16">
+                @else
+                    <img class="w-10 h-10 rounded-full" src="/src/img/no-photo.jpeg">
+               @endif
                 </button>
               </div>
               <div class="absolute z-50 hidden my-4 text-base list-none  divide-y divide-gray-100 rounded shadow bg-primary dark:divide-gray-600" id="dropdown-user">
                 <div class="px-4 py-3" role="none">
-                  <p class="text-sm text-gray-900 dark:text-white" role="none">
-                    Neil Sims
+                  <a href="/profile" class="text-sm text-white">
+                    Profile
+                  </a>
+                  <p class="text-sm text-white" role="none">
+                  {{ auth()->user()->name }}
                   </p>
-                  <p class="text-sm font-medium text-gray-900 truncate dark:text-gray-300" role="none">
-                    neil.sims@flowbite.com
+                  <p class="text-sm font-medium text-gray-300" role="none">
+                    {{ auth()->user()->email }}
                   </p>
                 </div>
                 <ul class="py-1" role="none">
@@ -53,6 +61,7 @@
                 </ul>
               </div>
             </div>
+          
           </div>
               @else
               <li>

@@ -93,6 +93,9 @@
                     No
                 </th>
                 <th scope="col" class="w-8 px-14 py-3">
+                    Foto
+                </th>
+                <th scope="col" class="w-8 px-14 py-3">
                     Email
                 </th>
                 <th scope="col" class="w-8 px-14 py-3">
@@ -109,6 +112,13 @@
             <tr class="border-b text-gray-50 bg-gray-800">
                 <td class="px-6 py-3 text-center">
                     <div class="text-base font-semibold item-center">{{ $loop->iteration }}</div>
+                </td>
+                <td class="px-14 py-4 text-center">
+                    @if ($user->image)
+                    <img src="{{ asset('storage/' . $user->gambar) }}" class="rounded-2xl w-16 h-16">
+                @else
+                    <img class="w-10 h-10 rounded-full" src="/src/img/no-photo.jpeg">
+               @endif
                 </td>
                 <td class="px-14 py-4 text-center">
                     <div class="text-base font-semibold">{{ $user->email }}</div>
