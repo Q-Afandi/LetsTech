@@ -15,4 +15,11 @@ class Product extends Model
     {
         return $this->belongsTo(Kategori::class);
     }
+
+    public function scopeFilter($query)
+    {
+        if (request('search')) {
+            $query->where('nama_product', 'like', '%' . request('search') . '%');
+            }
+    }
 }

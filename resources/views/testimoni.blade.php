@@ -3,8 +3,8 @@
 @section('container')
 
 <!-- review -->
-<section>
-    <div class="container mx-auto py-12 pt-15 mt-24">
+<section class="pt-40 pb-96">
+    <div class="container mx-auto py-12 pt-15">
         <h3 class="xl:text-center text-xl font-semibold ">Review Dari Customer </h3>
         <div class="xl:flex gap-3 mt-5">
             <div class="mx-auto p-10 rounded-xl shadow-lg">

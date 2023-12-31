@@ -119,11 +119,6 @@
                             <div class="bg-white shadow-lg" id="chartpie"></div>
                         </div>
                     </div>
-                    <div class="col-span-12 mt-5">
-                        <div class="grid gap-2 grid-cols-1 lg:grid-cols-1">
-                            Disini nanti Buat Struk atau orderan masuk
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>

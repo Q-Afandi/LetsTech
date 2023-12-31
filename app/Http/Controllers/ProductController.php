@@ -13,6 +13,7 @@ class ProductController extends Controller
      */
     public function index(Request $request)
     {
+
         if ($request->kategori) {
             $kategori = Kategori::where('name', $request->kategori)->first();
             $product = Product::latest()->where('kategori_id', $kategori->id)->get();

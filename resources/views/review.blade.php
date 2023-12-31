@@ -6,7 +6,7 @@
         <div class="container">
             <div class="w-full px-4">
                 <div class="max-w-xl mx-auto text-center mb-10 ">
-                    <h2 class="font-bold text-primary text-2xl mb-4 sm:text-4xl lg:text-3xl">Testimoni Costumer</h2>
+                    <h2 class="font-bold text-primary text-2xl mb-4 sm:text-4xl lg:text-3xl">Review</h2>
                     <p class="font-medium text-md text-black md:text-lg">ReviewerGadget #UpGadget</p>
                 </div>
             </div>

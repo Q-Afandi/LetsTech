@@ -15,7 +15,7 @@
                     <a href="/product" class="hover:underline me-4 md:me-6">Product</a>
                 </li>
                 <li>
-                    <a href="#" class="hover:underline me-4 md:me-6">Review</a>
+                    <a href="/review" class="hover:underline me-4 md:me-6">Review</a>
                 </li>
                 <li>
                     <a href="#" class="hover:underline">Contact</a>
